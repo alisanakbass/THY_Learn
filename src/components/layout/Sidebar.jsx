@@ -11,6 +11,12 @@ const menuItems = [
   { path: "/listening", icon: "🎧", label: "Dinleme", id: "listening" },
   { path: "/reading", icon: "📖", label: "Okuma", id: "reading" },
   { path: "/aviation", icon: "✈️", label: "Havacılık", id: "aviation" },
+  {
+    path: "/mock-exam",
+    icon: "🎯",
+    label: "Sınav Simülasyonu",
+    id: "mock-exam",
+  },
   { path: "/notes", icon: "📝", label: "Notlarım", id: "notes" },
   { path: "/calendar", icon: "📅", label: "Takvim", id: "calendar" },
   { path: "/settings", icon: "⚙️", label: "Ayarlar", id: "settings" },

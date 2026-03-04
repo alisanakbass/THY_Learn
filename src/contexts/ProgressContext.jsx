@@ -24,6 +24,7 @@ const initialState = {
   notes: [],
   errorLog: [],
   badges: [],
+  mockExam: { history: [], bestScore: 0 },
   wordOfDay: { word: null, date: null },
   settings: {
     theme: "dark",
@@ -230,6 +231,28 @@ function progressReducer(state, action) {
       return { ...state, currentLevel: action.payload };
     }
 
+    case "COMPLETE_MOCK_EXAM": {
+      const examResult = action.payload;
+      const newHistory = [...(state.mockExam?.history || []), examResult];
+      const newBest = Math.max(
+        state.mockExam?.bestScore || 0,
+        examResult.percentage,
+      );
+      return {
+        ...state,
+        mockExam: {
+          history: newHistory,
+          bestScore: newBest,
+        },
+        xp: state.xp + (examResult.passed ? 100 : 25),
+        totalXP: state.totalXP + (examResult.passed ? 100 : 25),
+        dailyGoals: {
+          ...state.dailyGoals,
+          todayLessons: state.dailyGoals.todayLessons + 1,
+        },
+      };
+    }
+
     case "UPDATE_SETTINGS": {
       return {
         ...state,
@@ -306,6 +329,7 @@ export function ProgressProvider({ children }) {
   const isGrammarCompleted = (lessonId) =>
     state.grammar[lessonId]?.completed || false;
   const getGrammarScore = (lessonId) => state.grammar[lessonId]?.score || 0;
+  const getMockExamHistory = () => state.mockExam?.history || [];
 
   const getLevelProgress = () => {
     const levels = { A1: 0, A2: 1, B1: 2, B2: 3 };
@@ -369,6 +393,7 @@ export function ProgressProvider({ children }) {
         getDailyGoalProgress,
         exportProgress,
         importProgress,
+        getMockExamHistory,
       }}
     >
       {children}

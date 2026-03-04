@@ -8,6 +8,7 @@ import Grammar from "./pages/Grammar";
 import Listening from "./pages/Listening";
 import Reading from "./pages/Reading";
 import Aviation from "./pages/Aviation";
+import MockExam from "./pages/MockExam";
 import Notes from "./pages/Notes";
 import Calendar from "./pages/Calendar";
 import Settings from "./pages/Settings";
@@ -28,6 +29,7 @@ export default function App() {
                 <Route path="/listening" element={<Listening />} />
                 <Route path="/reading" element={<Reading />} />
                 <Route path="/aviation" element={<Aviation />} />
+                <Route path="/mock-exam" element={<MockExam />} />
                 <Route path="/notes" element={<Notes />} />
                 <Route path="/calendar" element={<Calendar />} />
                 <Route path="/settings" element={<Settings />} />

@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  thy-english:
+    build: .
+    container_name: thy-english-app
+    ports:
+      - "80:80"
+    restart: unless-stopped

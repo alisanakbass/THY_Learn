@@ -1,0 +1,359 @@
+{
+  "examInfo": {
+    "title": "THY İngilizce Sınav Simülasyonu",
+    "description": "Bu sınav, Türk Hava Yolları pilot/kabin memuru alım sürecindeki online İngilizce sınavını (HRPeak) simüle etmektedir.",
+    "totalQuestions": 32,
+    "durationMinutes": 40,
+    "sections": ["Grammar", "Vocabulary", "Reading", "Listening"],
+    "questionsPerSection": 8
+  },
+  "questions": [
+    {
+      "id": "exam_grammar_01",
+      "category": "grammar",
+      "question": "If we __________ to finish the report by Friday, we should start working on it immediately.",
+      "options": ["want", "wanted", "had wanted", "will want"],
+      "answer": "want",
+      "explanation": "Birinci tip koşul cümlesi (Type 1 Conditional): 'If + present simple, ... should/will ...' yapısı kullanılır."
+    },
+    {
+      "id": "exam_grammar_02",
+      "category": "grammar",
+      "question": "The stolen painting __________ by the police after an anonymous tip.",
+      "options": ["was recovered", "recovers", "had recovered", "recovering"],
+      "answer": "was recovered",
+      "explanation": "Edilgen yapı (Passive Voice): Resim kurtarıldı → 'was recovered' (past simple passive)."
+    },
+    {
+      "id": "exam_grammar_03",
+      "category": "grammar",
+      "question": "If I __________ enough money, I would travel around the world.",
+      "options": ["have", "had", "will have", "am having"],
+      "answer": "had",
+      "explanation": "İkinci tip koşul cümlesi (Type 2 Conditional): 'If + past simple, ... would + verb' yapısı kullanılır. Gerçek dışı/hayali durumlar için."
+    },
+    {
+      "id": "exam_grammar_04",
+      "category": "grammar",
+      "question": "She enjoys __________ new recipes in her free time.",
+      "options": ["to try", "try", "trying", "tried"],
+      "answer": "trying",
+      "explanation": "'Enjoy' fiili gerund (V-ing) ile kullanılır: enjoy + doing something."
+    },
+    {
+      "id": "exam_grammar_05",
+      "category": "grammar",
+      "question": "By this time next year, she __________ her degree.",
+      "options": [
+        "will complete",
+        "completes",
+        "will have completed",
+        "completing"
+      ],
+      "answer": "will have completed",
+      "explanation": "Future Perfect Tense: Gelecekte belirli bir zamana kadar tamamlanmış olacak eylemler için 'will have + past participle' kullanılır."
+    },
+    {
+      "id": "exam_grammar_06",
+      "category": "grammar",
+      "question": "Not until he arrived home __________ he had lost his wallet.",
+      "options": [
+        "did he realize",
+        "he realized",
+        "he had realized",
+        "does he realize"
+      ],
+      "answer": "did he realize",
+      "explanation": "'Not until' ile başlayan cümlelerde devrik yapı (inversion) kullanılır: 'Not until ... did + subject + verb'."
+    },
+    {
+      "id": "exam_grammar_07",
+      "category": "grammar",
+      "question": "If she __________ more careful, she wouldn't have made that mistake.",
+      "options": ["had been", "was", "were", "has been"],
+      "answer": "had been",
+      "explanation": "Üçüncü tip koşul cümlesi (Type 3 Conditional): 'If + past perfect, ... would have + past participle'. Geçmişteki pişmanlıklar için."
+    },
+    {
+      "id": "exam_grammar_08",
+      "category": "grammar",
+      "question": "I __________ on it since this morning and I still __________.",
+      "options": [
+        "worked / haven't finished",
+        "had been working / don't finish",
+        "have been working / haven't finished",
+        "was working / didn't finish"
+      ],
+      "answer": "have been working / haven't finished",
+      "explanation": "Present Perfect Continuous: Geçmişte başlayıp hâlâ devam eden eylemler için 'have been + V-ing' kullanılır."
+    },
+    {
+      "id": "exam_vocab_01",
+      "category": "vocabulary",
+      "question": "The weather conditions __________ significantly overnight, forcing the airline to cancel several departures.",
+      "options": ["deteriorated", "recovered", "accomplished", "contributed"],
+      "answer": "deteriorated",
+      "explanation": "'Deteriorate' = kötüleşmek, bozulmak. Hava koşullarının kötüleşmesi bağlamında en uygun fiildir. (recover = iyileşmek, accomplish = başarmak, contribute = katkıda bulunmak)"
+    },
+    {
+      "id": "exam_vocab_02",
+      "category": "vocabulary",
+      "question": "All cabin crew members are __________ to attend the safety briefing before each flight, regardless of their experience.",
+      "options": ["prohibited", "exempt", "obliged", "reluctant"],
+      "answer": "obliged",
+      "explanation": "'Obliged' = mecbur, zorunlu (mandatory). 'Prohibited' = yasaklanmış, 'exempt' = muaf, 'reluctant' = isteksiz."
+    },
+    {
+      "id": "exam_vocab_03",
+      "category": "vocabulary",
+      "question": "The airline struggled to __________ the growing demand for flights to Southeast Asia during the holiday season.",
+      "options": ["accommodate", "eliminate", "abandon", "exaggerate"],
+      "answer": "accommodate",
+      "explanation": "'Accommodate' = karşılamak, uyum sağlamak. Artan talebi karşılama bağlamında kullanılır. (eliminate = ortadan kaldırmak, abandon = terk etmek, exaggerate = abartmak)"
+    },
+    {
+      "id": "exam_vocab_04",
+      "category": "vocabulary",
+      "question": "Pilots who achieve ICAO Level 6 language proficiency are __________ from further retesting requirements.",
+      "options": ["excluded", "exempt", "expelled", "extracted"],
+      "answer": "exempt",
+      "explanation": "'Exempt from' = muaf tutulan. Resmi/yasal bağlamlarda 'bir yükümlülükten muaf olmak' anlamında kullanılır. (excluded = dışlanan, expelled = kovulan, extracted = çıkarılan)"
+    },
+    {
+      "id": "exam_vocab_05",
+      "category": "vocabulary",
+      "question": "The investigation revealed that a series of __________ errors by the ground crew contributed to the incident.",
+      "options": ["consecutive", "occasional", "deliberate", "voluntary"],
+      "answer": "consecutive",
+      "explanation": "'Consecutive' = ardışık, birbirini izleyen. Bir dizi peş peşe hata bağlamında en uygun kelimedir. (occasional = ara sıra, deliberate = kasıtlı, voluntary = gönüllü)"
+    },
+    {
+      "id": "exam_vocab_06",
+      "category": "vocabulary",
+      "question": "The flight attendant handled the __________ passenger with remarkable professionalism and managed to de-escalate the situation.",
+      "options": ["obedient", "disruptive", "indifferent", "courteous"],
+      "answer": "disruptive",
+      "explanation": "'Disruptive' = düzeni bozan, sorun çıkaran. Sakinleştirme gerektiren bir yolcu için en uygun sıfat. (obedient = itaatkar, indifferent = kayıtsız, courteous = nazik)"
+    },
+    {
+      "id": "exam_vocab_07",
+      "category": "vocabulary",
+      "question": "Due to unforeseen circumstances, the airline had to __________ passengers on alternative flights at no additional cost.",
+      "options": ["rebook", "withdraw", "dismiss", "overlook"],
+      "answer": "rebook",
+      "explanation": "'Rebook' = yeniden bilet kesmek/ayarlamak. Havayolu terminolojisinde sık kullanılan bir terimdir. (withdraw = geri çekmek, dismiss = reddetmek, overlook = göz ardı etmek)"
+    },
+    {
+      "id": "exam_vocab_08",
+      "category": "vocabulary",
+      "question": "The captain decided to __________ the flight through an alternative route to avoid the severe thunderstorm ahead.",
+      "options": ["divert", "suspend", "abolish", "surrender"],
+      "answer": "divert",
+      "explanation": "'Divert' = yönünü değiştirmek, başka yöne çevirmek. Havacılıkta alternatif rotaya yönlendirme için standart terimdir. (suspend = askıya almak, abolish = kaldırmak, surrender = teslim olmak)"
+    },
+    {
+      "id": "exam_reading_01",
+      "category": "reading",
+      "passage": "Turkish Airlines, founded in 1933, has grown to become one of the largest airlines in the world. With its hub at Istanbul Airport, the airline flies to more than 340 destinations across 129 countries, making it the carrier that flies to the most countries in the world. The airline has been a member of the Star Alliance since 2008 and has received numerous awards, including being named the best airline in Europe multiple times by Skytrax. Turkish Airlines is known for its award-winning catering service, which offers passengers a taste of Turkish cuisine at 30,000 feet. The airline's fleet consists of over 400 modern aircraft, including Boeing 787 Dreamliners and Airbus A350s, ensuring passengers travel in comfort and safety.",
+      "question": "According to the passage, what makes Turkish Airlines unique compared to other airlines?",
+      "options": [
+        "It is the oldest airline in the world",
+        "It flies to the most countries in the world",
+        "It has the largest fleet in Europe",
+        "It only operates domestic flights"
+      ],
+      "answer": "It flies to the most countries in the world",
+      "explanation": "Paragrafta 'the carrier that flies to the most countries in the world' ifadesi açıkça belirtilmiştir."
+    },
+    {
+      "id": "exam_reading_02",
+      "category": "reading",
+      "passage": "Turkish Airlines, founded in 1933, has grown to become one of the largest airlines in the world. With its hub at Istanbul Airport, the airline flies to more than 340 destinations across 129 countries, making it the carrier that flies to the most countries in the world. The airline has been a member of the Star Alliance since 2008 and has received numerous awards, including being named the best airline in Europe multiple times by Skytrax. Turkish Airlines is known for its award-winning catering service, which offers passengers a taste of Turkish cuisine at 30,000 feet. The airline's fleet consists of over 400 modern aircraft, including Boeing 787 Dreamliners and Airbus A350s, ensuring passengers travel in comfort and safety.",
+      "question": "Which of the following is NOT mentioned in the passage?",
+      "options": [
+        "Turkish Airlines' Star Alliance membership",
+        "The number of destinations served",
+        "The airline's ticket prices",
+        "The types of aircraft in the fleet"
+      ],
+      "answer": "The airline's ticket prices",
+      "explanation": "Paragrafta bilet fiyatlarından hiç bahsedilmemiştir. Diğer tüm seçenekler metinde geçmektedir."
+    },
+    {
+      "id": "exam_reading_03",
+      "category": "reading",
+      "passage": "Aviation safety has improved dramatically over the past decades, thanks to advancements in technology, better training programs, and stricter regulations. Modern aircraft are equipped with sophisticated systems that can detect potential problems before they become critical. Pilots undergo rigorous training that includes simulator sessions where they practice handling emergency situations. Air traffic control systems have also been modernized to manage the increasing volume of air traffic safely. Despite these improvements, human error remains the leading cause of aviation incidents, accounting for approximately 70% of all accidents. This is why airlines continue to invest heavily in crew resource management training, which teaches effective communication and teamwork among flight crew members.",
+      "question": "What is the main idea of this passage?",
+      "options": [
+        "Pilots do not need additional training",
+        "Aviation safety has improved but human error remains a challenge",
+        "Air traffic control is the most important safety feature",
+        "Modern aircraft never have technical problems"
+      ],
+      "answer": "Aviation safety has improved but human error remains a challenge",
+      "explanation": "Paragraf, havacılık güvenliğindeki gelişmeleri anlatırken, insan hatasının hâlâ en büyük sorun olduğunu vurgular."
+    },
+    {
+      "id": "exam_reading_04",
+      "category": "reading",
+      "passage": "Aviation safety has improved dramatically over the past decades, thanks to advancements in technology, better training programs, and stricter regulations. Modern aircraft are equipped with sophisticated systems that can detect potential problems before they become critical. Pilots undergo rigorous training that includes simulator sessions where they practice handling emergency situations. Air traffic control systems have also been modernized to manage the increasing volume of air traffic safely. Despite these improvements, human error remains the leading cause of aviation incidents, accounting for approximately 70% of all accidents. This is why airlines continue to invest heavily in crew resource management training, which teaches effective communication and teamwork among flight crew members.",
+      "question": "According to the passage, what percentage of aviation accidents are caused by human error?",
+      "options": ["50%", "60%", "70%", "80%"],
+      "answer": "70%",
+      "explanation": "Paragrafta 'approximately 70% of all accidents' ifadesi ile açıkça belirtilmiştir."
+    },
+    {
+      "id": "exam_reading_05",
+      "category": "reading",
+      "passage": "The International Civil Aviation Organization (ICAO) requires all pilots flying internationally to demonstrate a minimum level of English language proficiency. This requirement was introduced after several accidents were attributed to communication breakdowns between pilots and air traffic controllers who did not share a common language. Under the ICAO language proficiency requirements, pilots must demonstrate competence in pronunciation, structure, vocabulary, fluency, comprehension, and interactions. The minimum required level is Operational Level 4 on a scale of 1 to 6, with Level 6 being expert. Pilots who achieve Level 4 must be retested every three years, while those who reach Level 5 need retesting every six years. Only pilots at Level 6 are exempt from further testing.",
+      "question": "Why did ICAO introduce the English language proficiency requirement?",
+      "options": [
+        "To make airline tickets more expensive",
+        "To reduce the number of pilots worldwide",
+        "Because communication failures caused accidents",
+        "Because English is the easiest language to learn"
+      ],
+      "answer": "Because communication failures caused accidents",
+      "explanation": "Metinde 'after several accidents were attributed to communication breakdowns' ifadesi bu gerekçeyi açıkça ortaya koymaktadır."
+    },
+    {
+      "id": "exam_reading_06",
+      "category": "reading",
+      "passage": "The International Civil Aviation Organization (ICAO) requires all pilots flying internationally to demonstrate a minimum level of English language proficiency. This requirement was introduced after several accidents were attributed to communication breakdowns between pilots and air traffic controllers who did not share a common language. Under the ICAO language proficiency requirements, pilots must demonstrate competence in pronunciation, structure, vocabulary, fluency, comprehension, and interactions. The minimum required level is Operational Level 4 on a scale of 1 to 6, with Level 6 being expert. Pilots who achieve Level 4 must be retested every three years, while those who reach Level 5 need retesting every six years. Only pilots at Level 6 are exempt from further testing.",
+      "question": "How often must a pilot at Level 5 be retested?",
+      "options": [
+        "Every year",
+        "Every three years",
+        "Every six years",
+        "They are exempt from retesting"
+      ],
+      "answer": "Every six years",
+      "explanation": "'Those who reach Level 5 need retesting every six years' ifadesi paragrafta açıkça belirtilmiştir."
+    },
+    {
+      "id": "exam_reading_07",
+      "category": "reading",
+      "passage": "Turbulence is one of the most common causes of in-flight injuries. It occurs when an aircraft encounters irregular air currents, which can cause sudden changes in altitude and attitude. There are several types of turbulence: clear-air turbulence (CAT), which occurs at high altitudes and cannot be detected by radar; mechanical turbulence, caused by air flowing over mountains or buildings; thermal turbulence, resulting from warm air rising rapidly; and wake turbulence, created by the wingtip vortices of a preceding aircraft. While modern weather forecasting can predict many types of turbulence, clear-air turbulence remains particularly challenging to forecast. Pilots are trained to reduce speed when encountering turbulence and to turn on the fasten seatbelt sign to protect passengers.",
+      "question": "Which type of turbulence cannot be detected by radar?",
+      "options": [
+        "Mechanical turbulence",
+        "Thermal turbulence",
+        "Clear-air turbulence",
+        "Wake turbulence"
+      ],
+      "answer": "Clear-air turbulence",
+      "explanation": "Paragrafta 'clear-air turbulence (CAT), which cannot be detected by radar' ifadesi açıkça belirtilmiştir."
+    },
+    {
+      "id": "exam_reading_08",
+      "category": "reading",
+      "passage": "Turbulence is one of the most common causes of in-flight injuries. It occurs when an aircraft encounters irregular air currents, which can cause sudden changes in altitude and attitude. There are several types of turbulence: clear-air turbulence (CAT), which occurs at high altitudes and cannot be detected by radar; mechanical turbulence, caused by air flowing over mountains or buildings; thermal turbulence, resulting from warm air rising rapidly; and wake turbulence, created by the wingtip vortices of a preceding aircraft. While modern weather forecasting can predict many types of turbulence, clear-air turbulence remains particularly challenging to forecast. Pilots are trained to reduce speed when encountering turbulence and to turn on the fasten seatbelt sign to protect passengers.",
+      "question": "What should pilots do when they encounter turbulence?",
+      "options": [
+        "Increase speed to fly through it quickly",
+        "Reduce speed and turn on the seatbelt sign",
+        "Land the aircraft immediately",
+        "Climb to a higher altitude"
+      ],
+      "answer": "Reduce speed and turn on the seatbelt sign",
+      "explanation": "Paragrafta 'Pilots are trained to reduce speed... and to turn on the fasten seatbelt sign' ifadesi cevabı verir."
+    },
+    {
+      "id": "exam_listening_01",
+      "category": "listening",
+      "audioText": "Good morning, ladies and gentlemen. This is your captain speaking. Welcome aboard Turkish Airlines flight TK 1987 from Istanbul to London Heathrow. Our flight time today will be approximately three hours and forty-five minutes. We will be cruising at an altitude of thirty-seven thousand feet. The weather in London is currently cloudy with a temperature of twelve degrees Celsius. We expect a smooth flight with some light turbulence over the Balkans. Please make sure your seatbelts are fastened, your tray tables are stowed, and your electronic devices are in airplane mode. On behalf of the entire crew, we wish you a pleasant flight.",
+      "question": "What is the expected flight time mentioned in the announcement?",
+      "options": [
+        "Two hours and thirty minutes",
+        "Three hours and forty-five minutes",
+        "Four hours and fifteen minutes",
+        "Three hours and fifteen minutes"
+      ],
+      "answer": "Three hours and forty-five minutes",
+      "explanation": "Anons metninde 'approximately three hours and forty-five minutes' ifadesi geçmektedir."
+    },
+    {
+      "id": "exam_listening_02",
+      "category": "listening",
+      "audioText": "Good morning, ladies and gentlemen. This is your captain speaking. Welcome aboard Turkish Airlines flight TK 1987 from Istanbul to London Heathrow. Our flight time today will be approximately three hours and forty-five minutes. We will be cruising at an altitude of thirty-seven thousand feet. The weather in London is currently cloudy with a temperature of twelve degrees Celsius. We expect a smooth flight with some light turbulence over the Balkans. Please make sure your seatbelts are fastened, your tray tables are stowed, and your electronic devices are in airplane mode. On behalf of the entire crew, we wish you a pleasant flight.",
+      "question": "What is the current weather condition in London?",
+      "options": [
+        "Sunny and warm",
+        "Rainy with strong winds",
+        "Cloudy with 12°C",
+        "Snowy with low visibility"
+      ],
+      "answer": "Cloudy with 12°C",
+      "explanation": "Metinde 'cloudy with a temperature of twelve degrees Celsius' ifadesi belirtilmiştir."
+    },
+    {
+      "id": "exam_listening_03",
+      "category": "listening",
+      "audioText": "Attention all passengers. This is the ground crew speaking. We regret to inform you that flight TK 2045 to Paris Charles de Gaulle, originally scheduled to depart at fourteen hundred hours, has been delayed by approximately ninety minutes due to adverse weather conditions at the destination airport. The new estimated departure time is fifteen thirty. We apologize for any inconvenience this may cause. Passengers holding boarding passes for this flight are requested to remain in the departure lounge. Complimentary refreshments will be provided at Gate 23. For further information, please contact our ground staff at the information desk.",
+      "question": "Why has the flight been delayed?",
+      "options": [
+        "Technical problems with the aircraft",
+        "Adverse weather conditions at the destination",
+        "A strike by the cabin crew",
+        "Runway maintenance at the departure airport"
+      ],
+      "answer": "Adverse weather conditions at the destination",
+      "explanation": "'Delayed due to adverse weather conditions at the destination airport' ifadesi doğrudan cevaptır."
+    },
+    {
+      "id": "exam_listening_04",
+      "category": "listening",
+      "audioText": "Attention all passengers. This is the ground crew speaking. We regret to inform you that flight TK 2045 to Paris Charles de Gaulle, originally scheduled to depart at fourteen hundred hours, has been delayed by approximately ninety minutes due to adverse weather conditions at the destination airport. The new estimated departure time is fifteen thirty. We apologize for any inconvenience this may cause. Passengers holding boarding passes for this flight are requested to remain in the departure lounge. Complimentary refreshments will be provided at Gate 23. For further information, please contact our ground staff at the information desk.",
+      "question": "What is the new estimated departure time?",
+      "options": ["14:00", "14:30", "15:00", "15:30"],
+      "answer": "15:30",
+      "explanation": "Metinde 'new estimated departure time is fifteen thirty' ifadesi ile yeni kalkış saati belirtilmiştir."
+    },
+    {
+      "id": "exam_listening_05",
+      "category": "listening",
+      "audioText": "Ladies and gentlemen, as we begin our descent into Istanbul Airport, please ensure that your seat backs are in the upright position and your seatbelts are securely fastened. All carry-on luggage must be placed in the overhead bin or under the seat in front of you. We will be landing in approximately twenty minutes. The local time in Istanbul is six forty-five PM and the temperature is twenty-two degrees Celsius. Please note that you must remain seated with your seatbelt fastened until the aircraft has come to a complete stop and the seatbelt sign has been turned off. Thank you for flying with Turkish Airlines today.",
+      "question": "How long until the aircraft lands?",
+      "options": [
+        "Ten minutes",
+        "Fifteen minutes",
+        "Twenty minutes",
+        "Thirty minutes"
+      ],
+      "answer": "Twenty minutes",
+      "explanation": "'We will be landing in approximately twenty minutes' ifadesi cevabı verir."
+    },
+    {
+      "id": "exam_listening_06",
+      "category": "listening",
+      "audioText": "Ladies and gentlemen, as we begin our descent into Istanbul Airport, please ensure that your seat backs are in the upright position and your seatbelts are securely fastened. All carry-on luggage must be placed in the overhead bin or under the seat in front of you. We will be landing in approximately twenty minutes. The local time in Istanbul is six forty-five PM and the temperature is twenty-two degrees Celsius. Please note that you must remain seated with your seatbelt fastened until the aircraft has come to a complete stop and the seatbelt sign has been turned off. Thank you for flying with Turkish Airlines today.",
+      "question": "What is the local time in Istanbul?",
+      "options": ["5:45 PM", "6:15 PM", "6:45 PM", "7:15 PM"],
+      "answer": "6:45 PM",
+      "explanation": "'The local time in Istanbul is six forty-five PM' ifadesi doğrudan cevaptır."
+    },
+    {
+      "id": "exam_listening_07",
+      "category": "listening",
+      "audioText": "Good afternoon, passengers. I would like to draw your attention to the safety card located in the seat pocket in front of you. There are eight emergency exits on this aircraft: two at the front, four over the wings, and two at the rear. In the event of an emergency evacuation, floor-level lighting will guide you to the nearest exit. Life vests are located under your seats. To use your life vest, pull it over your head, fasten the strap around your waist, and inflate it by pulling the red tab only after you have left the aircraft. Oxygen masks will drop from above in the event of a loss of cabin pressure. Place the mask over your nose and mouth, and breathe normally. Please assist children and others who may need help after securing your own mask first.",
+      "question": "When should passengers inflate their life vests?",
+      "options": [
+        "Immediately when they find them",
+        "Inside the aircraft before evacuation",
+        "Only after leaving the aircraft",
+        "When the oxygen masks drop"
+      ],
+      "answer": "Only after leaving the aircraft",
+      "explanation": "'Inflate it by pulling the red tab only after you have left the aircraft' ifadesi cevabı açıkça belirtir."
+    },
+    {
+      "id": "exam_listening_08",
+      "category": "listening",
+      "audioText": "Good afternoon, passengers. I would like to draw your attention to the safety card located in the seat pocket in front of you. There are eight emergency exits on this aircraft: two at the front, four over the wings, and two at the rear. In the event of an emergency evacuation, floor-level lighting will guide you to the nearest exit. Life vests are located under your seats. To use your life vest, pull it over your head, fasten the strap around your waist, and inflate it by pulling the red tab only after you have left the aircraft. Oxygen masks will drop from above in the event of a loss of cabin pressure. Place the mask over your nose and mouth, and breathe normally. Please assist children and others who may need help after securing your own mask first.",
+      "question": "How many emergency exits are there on this aircraft?",
+      "options": ["Four", "Six", "Eight", "Ten"],
+      "answer": "Eight",
+      "explanation": "'There are eight emergency exits on this aircraft' ifadesi cevabı vermektedir."
+    }
+  ]
+}
