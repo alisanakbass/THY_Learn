@@ -1,0 +1,102 @@
+[
+  {
+    "id": "a2_av_001",
+    "en": "turbulence",
+    "tr": "türbülans/çalkantı",
+    "example": "We hit some turbulence over the mountains.",
+    "exampleTr": "Dağların üzerinde türbülansa girdik.",
+    "pronunciation": "/ˈtɜːrbjələns/",
+    "category": "aviation",
+    "level": "A2"
+  },
+  {
+    "id": "a2_av_002",
+    "en": "customs",
+    "tr": "gümrük",
+    "example": "You must declare these goods at customs.",
+    "exampleTr": "Bu malları gümrükte bildirmek zorundasınız.",
+    "pronunciation": "/ˈkʌstəmz/",
+    "category": "aviation",
+    "level": "A2"
+  },
+  {
+    "id": "a2_av_003",
+    "en": "aisle",
+    "tr": "koridor",
+    "example": "I prefer the aisle seat so I can stretch my legs.",
+    "exampleTr": "Bacaklarımı uzatabildiğim için koridor koltuğunu tercih ederim.",
+    "pronunciation": "/aɪl/",
+    "category": "aviation",
+    "level": "A2"
+  },
+  {
+    "id": "a2_av_004",
+    "en": "boarding",
+    "tr": "biniş",
+    "example": "Boarding will start in 10 minutes.",
+    "exampleTr": "Uçağa biniş 10 dakika içinde başlayacak.",
+    "pronunciation": "/ˈbɔːrdɪŋ/",
+    "category": "aviation",
+    "level": "A2"
+  },
+  {
+    "id": "a2_av_005",
+    "en": "departure",
+    "tr": "kalkış/ayrılış",
+    "example": "Check the departure screen for our gate.",
+    "exampleTr": "Kapımız için kalkış ekranını kontrol et.",
+    "pronunciation": "/dɪˈpɑːrtʃər/",
+    "category": "aviation",
+    "level": "A2"
+  },
+  {
+    "id": "a2_av_006",
+    "en": "arrival",
+    "tr": "varış/geliş",
+    "example": "Our estimated time of arrival is 4 PM.",
+    "exampleTr": "Tahmini varış saatimiz öğleden sonra 4.",
+    "pronunciation": "/əˈraɪvəl/",
+    "category": "aviation",
+    "level": "A2"
+  },
+  {
+    "id": "a2_av_007",
+    "en": "delay",
+    "tr": "rötar/gecikme",
+    "example": "The flight has a two hour delay.",
+    "exampleTr": "Uçuşun 2 saat rötari var.",
+    "pronunciation": "/dɪˈleɪ/",
+    "category": "aviation",
+    "level": "A2"
+  },
+  {
+    "id": "a2_av_008",
+    "en": "altitude",
+    "tr": "irtifa",
+    "example": "We are maintaining an altitude of 30,000 feet.",
+    "exampleTr": "30,000 ft irtifayı koruyoruz.",
+    "pronunciation": "/ˈæltɪtuːd/",
+    "category": "aviation",
+    "level": "A2"
+  },
+  {
+    "id": "a2_av_009",
+    "en": "maintenance",
+    "tr": "bakım",
+    "example": "The aircraft is undergoing routine maintenance.",
+    "exampleTr": "Uçak periyodik bakımdan geçiyor.",
+    "pronunciation": "/ˈmeɪntənəns/",
+    "category": "aviation",
+    "level": "A2"
+  },
+  {
+    "id": "a2_av_010",
+    "en": "carousel",
+    "tr": "bagaj bandı",
+    "example": "Your bags will arrive at carousel number 4.",
+    "exampleTr": "Bavullarınız 4 numaralı bagaj bandına gelecek.",
+    "pronunciation": "/ˌkærəˈsel/",
+    "category": "aviation",
+    "level": "A2"
+  }
+]

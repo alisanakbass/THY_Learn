@@ -1,0 +1,464 @@
+[
+  {
+    "id": "a1_listen_01",
+    "title": "Havalimanı Anonsu",
+    "level": "A1",
+    "type": "announcement",
+    "text": "Ladies and gentlemen, this is the final boarding call for Turkish Airlines flight TK 1234 to London Heathrow. All passengers please proceed to gate 15 immediately. The doors will close in five minutes.",
+    "textTr": "Bayanlar ve baylar, bu Türk Hava Yolları'nın Londra Heathrow'a TK 1234 sefer sayılı uçuşu için son çağrıdır. Tüm yolcuların lütfen derhal 15 numaralı kapıya geçmeleri rica olunur. Kapılar beş dakika içinde kapanacaktır.",
+    "questions": [
+      {
+        "question": "What airline is mentioned?",
+        "options": [
+          "British Airways",
+          "Turkish Airlines",
+          "Lufthansa",
+          "Emirates"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "What is the flight number?",
+        "options": [
+          "TK 1234",
+          "TK 4321",
+          "TK 5678",
+          "TK 8765"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "Which gate should passengers go to?",
+        "options": [
+          "Gate 10",
+          "Gate 12",
+          "Gate 15",
+          "Gate 20"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Where is the flight going?",
+        "options": [
+          "Paris",
+          "Berlin",
+          "New York",
+          "London"
+        ],
+        "answer": 3
+      }
+    ],
+    "fillBlanks": [
+      {
+        "text": "This is the final ___ call for Turkish Airlines.",
+        "answer": "boarding"
+      },
+      {
+        "text": "All passengers please ___ to gate 15.",
+        "answer": "proceed"
+      },
+      {
+        "text": "The ___ will close in five minutes.",
+        "answer": "doors"
+      }
+    ]
+  },
+  {
+    "id": "a1_listen_02",
+    "title": "Pilot Anonsu",
+    "level": "A1",
+    "type": "pilot_announcement",
+    "text": "Good morning, ladies and gentlemen. This is your captain speaking. Welcome aboard Turkish Airlines flight TK 789 to Istanbul. Our flight time today will be approximately three hours. The weather in Istanbul is sunny with a temperature of 22 degrees. Please sit back, relax, and enjoy the flight. Thank you.",
+    "textTr": "Günaydın, bayanlar ve baylar. Ben kaptanınız konuşuyorum. Türk Hava Yolları TK 789 İstanbul uçuşuna hoş geldiniz. Bugün uçuş süremiz yaklaşık üç saat olacaktır. İstanbul'da hava güneşli ve sıcaklık 22 derece. Lütfen arkanıza yaslanın, rahat edin ve uçuşun keyfini çıkarın. Teşekkürler.",
+    "questions": [
+      {
+        "question": "Who is speaking?",
+        "options": [
+          "A passenger",
+          "A flight attendant",
+          "The captain",
+          "The tower"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "How long is the flight?",
+        "options": [
+          "One hour",
+          "Two hours",
+          "Three hours",
+          "Four hours"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "What is the weather like in Istanbul?",
+        "options": [
+          "Rainy",
+          "Cloudy",
+          "Sunny",
+          "Snowy"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "What is the temperature in Istanbul?",
+        "options": [
+          "18°C",
+          "20°C",
+          "22°C",
+          "25°C"
+        ],
+        "answer": 2
+      }
+    ],
+    "fillBlanks": [
+      {
+        "text": "This is your ___ speaking.",
+        "answer": "captain"
+      },
+      {
+        "text": "Our flight ___ will be approximately three hours.",
+        "answer": "time"
+      },
+      {
+        "text": "The weather in Istanbul is ___ .",
+        "answer": "sunny"
+      }
+    ]
+  },
+  {
+    "id": "a1_listen_03",
+    "title": "Güvenlik Anonsu",
+    "level": "A1",
+    "type": "safety",
+    "text": "Ladies and gentlemen, please fasten your seatbelts. Make sure your seat is in the upright position. Turn off all electronic devices. The emergency exits are located at the front, middle, and back of the aircraft. Your life vest is under your seat. Thank you for your attention.",
+    "textTr": "Bayanlar ve baylar, lütfen emniyet kemerlerinizi bağlayın. Koltuğunuzun dik pozisyonda olduğundan emin olun. Tüm elektronik cihazları kapatın. Acil çıkışlar uçağın ön, orta ve arka kısmında bulunmaktadır. Cankurtaran yeliğiniz koltuğunuzun altındadır. İlginiz için teşekkür ederiz.",
+    "questions": [
+      {
+        "question": "What should passengers fasten?",
+        "options": [
+          "Their shoes",
+          "Their seatbelts",
+          "Their bags",
+          "Their jackets"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Where is the life vest?",
+        "options": [
+          "On the seat",
+          "In the overhead bin",
+          "Under the seat",
+          "At the exit"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "What should passengers turn off?",
+        "options": [
+          "The lights",
+          "Electronic devices",
+          "The air conditioning",
+          "The engine"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "How many emergency exit locations are mentioned?",
+        "options": [
+          "One",
+          "Two",
+          "Three",
+          "Four"
+        ],
+        "answer": 2
+      }
+    ],
+    "fillBlanks": [
+      {
+        "text": "Please fasten your ___.",
+        "answer": "seatbelts"
+      },
+      {
+        "text": "Turn off all ___ devices.",
+        "answer": "electronic"
+      },
+      {
+        "text": "Your life vest is ___ your seat.",
+        "answer": "under"
+      }
+    ]
+  },
+  {
+    "id": "a1_listen_04",
+    "title": "Kule ile İlk Temas",
+    "level": "A1",
+    "type": "atc",
+    "text": "Istanbul Tower, this is Turkish One Two Three. Good morning. We are ready for pushback and engine start at gate 5.",
+    "textTr": "İstanbul Kule, burası Turkish 123. Günaydın. 5 numaralı kapıda pushback (geri itme) ve motor çalıştırma için hazırız.",
+    "questions": [
+      {
+        "question": "Who is the pilot calling?",
+        "options": [
+          "London Tower",
+          "Istanbul Tower",
+          "Paris Tower",
+          "New York Tower"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "What is the flight callsign?",
+        "options": [
+          "Turkish One Two",
+          "Turkish One Three Three",
+          "Turkish One Two Three",
+          "One Two Three"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "What are they ready for?",
+        "options": [
+          "Takeoff",
+          "Landing",
+          "Pushback and engine start",
+          "Boarding"
+        ],
+        "answer": 2
+      }
+    ],
+    "fillBlanks": [
+      {
+        "text": "Istanbul Tower, this is ___ One Two Three.",
+        "answer": "Turkish"
+      },
+      {
+        "text": "We are ___ for pushback.",
+        "answer": "ready"
+      },
+      {
+        "text": "Engine start at ___ 5.",
+        "answer": "gate"
+      }
+    ]
+  },
+  {
+    "id": "a1_listen_05",
+    "title": "Yolcu İletişimi",
+    "level": "A1",
+    "type": "conversation",
+    "text": "Excuse me, can I have some water, please? Yes, of course sir. Would you like ice with it? No, thank you, just still water. Here you go. Enjoy your flight.",
+    "textTr": "Afedersiniz, biraz su alabilir miyim lütfen? Evet, elbette efendim. Buzlu mu istersiniz? Hayır, teşekkür ederim, sadece durgun (normal) su. Buyurun. İyi uçuşlar.",
+    "questions": [
+      {
+        "question": "What does the passenger want?",
+        "options": [
+          "Coffee",
+          "Tea",
+          "Water",
+          "Juice"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Does the passenger want ice?",
+        "options": [
+          "Yes",
+          "No",
+          "Maybe",
+          "I don't know"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Who is the passenger talking to?",
+        "options": [
+          "The pilot",
+          "Another passenger",
+          "The flight attendant",
+          "The police"
+        ],
+        "answer": 2
+      }
+    ],
+    "fillBlanks": [
+      {
+        "text": "Excuse me, can I have some ___ , please?",
+        "answer": "water"
+      },
+      {
+        "text": "Would you like ___ with it?",
+        "answer": "ice"
+      },
+      {
+        "text": "Here you ___. Enjoy your flight.",
+        "answer": "go"
+      }
+    ]
+  },
+  {
+    "id": "a1_listen_06",
+    "title": "Hava Durumu Raporu",
+    "level": "A1",
+    "type": "weather",
+    "text": "This is the airport weather report. The temperature is 18 degrees Celsius. The wind is from the north at 10 knots. Visibility is good. There are no clouds. It is a beautiful day for flying.",
+    "textTr": "Burası havalimanı hava durumu raporudur. Sıcaklık 18 derece Celsius. Rüzgar kuzeyden 10 knot hızında. Görüş mesafesi iyi. Bulut yok. Uçmak için güzel bir gün.",
+    "questions": [
+      {
+        "question": "What is the temperature?",
+        "options": [
+          "10 degrees",
+          "15 degrees",
+          "18 degrees",
+          "20 degrees"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Where is the wind from?",
+        "options": [
+          "South",
+          "North",
+          "East",
+          "West"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "How is the visibility?",
+        "options": [
+          "Bad",
+          "Poor",
+          "Good",
+          "Zero"
+        ],
+        "answer": 2
+      }
+    ],
+    "fillBlanks": [
+      {
+        "text": "The temperature is 18 ___ Celsius.",
+        "answer": "degrees"
+      },
+      {
+        "text": "The ___ is from the north.",
+        "answer": "wind"
+      },
+      {
+        "text": "___ is good. There are no clouds.",
+        "answer": "Visibility"
+      }
+    ]
+  },
+  {
+    "id": "a1_listen_07",
+    "title": "Uçuş Gecikmesi",
+    "level": "A1",
+    "type": "announcement",
+    "text": "Attention please. We are sorry to announce that flight TK 555 to Paris is delayed. The new departure time is 14:30. This is because of bad weather in Paris. Please wait at gate 22.",
+    "textTr": "Lütfen dikkat. Paris'e giden TK 555 sefer sayılı uçuşun geciktiğini (rötar yaptığını) duyurmaktan üzüntü duyuyoruz. Yeni kalkış saati 14:30. Bunun nedeni Paris'teki kötü hava şartlarıdır. Lütfen 22 numaralı kapıda bekleyin.",
+    "questions": [
+      {
+        "question": "Where is the flight going?",
+        "options": [
+          "London",
+          "Istanbul",
+          "Paris",
+          "Berlin"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Why is the flight delayed?",
+        "options": [
+          "Technical problem",
+          "No pilot",
+          "Bad weather",
+          "Lost luggage"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "What is the new departure time?",
+        "options": [
+          "12:00",
+          "13:30",
+          "14:00",
+          "14:30"
+        ],
+        "answer": 3
+      }
+    ],
+    "fillBlanks": [
+      {
+        "text": "Flight TK 555 to Paris is ___.",
+        "answer": "delayed"
+      },
+      {
+        "text": "The new ___ time is 14:30.",
+        "answer": "departure"
+      },
+      {
+        "text": "Please wait at ___ 22.",
+        "answer": "gate"
+      }
+    ]
+  },
+  {
+    "id": "a1_listen_08",
+    "title": "İniş Anonsu",
+    "level": "A1",
+    "type": "announcement",
+    "text": "Ladies and gentlemen, we are beginning our descent into Istanbul. Please return to your seats and make sure your seatbelt is fastened securely. The cabin crew will now pass through the cabin to collect any rubbish.",
+    "textTr": "Bayanlar ve baylar, İstanbul'a inişimize (alçalmamıza) başlıyoruz. Lütfen koltuklarınıza dönün ve emniyet kemerinizin güvenli bir şekilde bağlandığından emin olun. Kabin ekibi şimdi çöpleri (atıkları) toplamak için kabin içinden geçecektir.",
+    "questions": [
+      {
+        "question": "What is the airplane doing?",
+        "options": [
+          "Taking off",
+          "Descending",
+          "Parking",
+          "Refueling"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "What should passengers check?",
+        "options": [
+          "Tickets",
+          "Passports",
+          "Seatbelts",
+          "Luggage"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "What will the crew collect?",
+        "options": [
+          "Tickets",
+          "Luggage",
+          "Money",
+          "Rubbish"
+        ],
+        "answer": 3
+      }
+    ],
+    "fillBlanks": [
+      {
+        "text": "We are beginning our ___ into Istanbul.",
+        "answer": "descent"
+      },
+      {
+        "text": "Please return to your ___.",
+        "answer": "seats"
+      },
+      {
+        "text": "The cabin crew will collect any ___.",
+        "answer": "rubbish"
+      }
+    ]
+  }
+]

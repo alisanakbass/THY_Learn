@@ -1,0 +1,254 @@
+.aviation-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.icao-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: var(--space-sm);
+}
+
+.icao-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-md);
+  cursor: pointer;
+  text-align: center;
+}
+
+.icao-letter {
+  font-size: var(--fs-2xl);
+  font-weight: 800;
+  background: linear-gradient(
+    135deg,
+    var(--accent-gold),
+    var(--accent-gold-light)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.icao-word {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.icao-pron {
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.icao-quiz-section {
+  max-width: 500px;
+}
+.icao-quiz-section h3 {
+  margin-bottom: var(--space-lg);
+  font-size: var(--fs-xl);
+}
+.icao-quiz {
+  text-align: center;
+}
+.quiz-prompt {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-md);
+}
+
+.quiz-letter-display {
+  font-size: 5rem;
+  font-weight: 900;
+  margin: var(--space-lg) 0;
+  background: linear-gradient(
+    135deg,
+    var(--accent-gold),
+    var(--accent-gold-light)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.quiz-input-row {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.scenario-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-lg);
+}
+
+.scenario-card {
+  cursor: pointer;
+}
+.scenario-card h3 {
+  margin-bottom: var(--space-sm);
+}
+.scenario-card p {
+  color: var(--text-secondary);
+  font-size: var(--fs-sm);
+  margin-bottom: var(--space-md);
+}
+.scenario-desc {
+  color: var(--text-secondary);
+  margin: var(--space-md) 0 var(--space-xl);
+}
+
+.dialogue-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.dialogue-item {
+  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+}
+
+.dialogue-pilot {
+  background: rgba(74, 144, 217, 0.08);
+  border-left: 4px solid var(--accent-blue);
+}
+.dialogue-atc {
+  background: rgba(39, 174, 96, 0.08);
+  border-left: 4px solid var(--accent-green);
+}
+
+.dialogue-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-sm);
+}
+.dialogue-speaker {
+  font-weight: 700;
+  font-size: var(--fs-sm);
+}
+.dialogue-text {
+  font-size: var(--fs-md);
+  color: var(--text-primary);
+  margin-bottom: var(--space-xs);
+  font-weight: 500;
+}
+.dialogue-tr {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Flashcards (Öğrenme Kartları) CSS */
+.flashcards-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.flashcard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+  perspective: 1000px;
+}
+
+.flashcard {
+  width: 300px;
+  height: 400px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.flashcard-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: var(--radius-lg);
+}
+
+.flashcard.flipped .flashcard-inner {
+  transform: rotateY(180deg);
+}
+
+.flashcard-front,
+.flashcard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+}
+
+.flashcard-back {
+  transform: rotateY(180deg);
+  background: linear-gradient(
+    135deg,
+    rgba(234, 187, 43, 0.05),
+    rgba(255, 220, 115, 0.1)
+  );
+}
+
+.flashcard-letter {
+  font-size: 8rem;
+  font-weight: 900;
+  background: linear-gradient(
+    135deg,
+    var(--accent-gold),
+    var(--accent-gold-light)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.flashcard-hint {
+  position: absolute;
+  bottom: var(--space-xl);
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+}
+
+.flashcard-word {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: var(--space-md);
+}
+
+.flashcard-pron {
+  font-size: var(--fs-lg);
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+}
+
+.flashcard-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  margin-top: var(--space-md);
+}
+
+.flashcard-counter {
+  font-weight: 600;
+  color: var(--text-secondary);
+  font-size: var(--fs-md);
+  min-width: 60px;
+  text-align: center;
+}

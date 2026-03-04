@@ -1,0 +1,128 @@
+[
+  {
+    "id": "b1_grammar_01",
+    "title": "Present Perfect Tense (Yakın Geçmiş / Etkileri Süren)",
+    "level": "B1",
+    "description": "Geçmişte başlayıp etkisi veya süreci şu an devam eden olaylar (just/already/yet/since/for).",
+    "explanation": "**Yapı:** Subject + have/has + V3 (Past Participle)\n\n**Olumlu:** I have (I've) flown this route before. (Bu rotayı daha önce uçtum - tecrübe)\n**Olumsuz:** They haven't boarded yet. (Henüz uçağa binmediler)\n**Soru:** Have you ever seen a storm like this? (Hiç böyle fırtına gördün mü?)\n\n**Havacılık Örnekleri:**\n- We have just landed. (Az önce indik.)\n- The captain has worked here for 10 years. (Kaptan 10 yıldır burada çalışıyor.)\n- Have they loaded the luggage yet? (Bagajı yüklediler mi?)",
+    "aviationContext": "Deneyimlerden, 'az önce' olanlardan veya tamamlanması beklenen görevlerin raporlanmasında esastır (ATC'ye: 'We have reached flight level 350').",
+    "exercises": [
+      {
+        "type": "fillBlank",
+        "question": "___ you ever ___ (fly) over the Atlantic?",
+        "answer": "Have...flown",
+        "options": [
+          "Have...fly",
+          "Have...flown",
+          "Did...fly",
+          "Are...flying"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "The mechanic ___ (just/finish) the checks.",
+        "answer": "has just finished",
+        "options": [
+          "just finished",
+          "has just finished",
+          "have just finished",
+          "is just finished"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Henüz kalkış izni almadık.",
+        "answer": "We haven't received clearance yet."
+      },
+      {
+        "type": "correctError",
+        "question": "They didn't arrive yet.",
+        "answer": "They haven't arrived yet."
+      }
+    ]
+  },
+  {
+    "id": "b1_grammar_02",
+    "title": "First and Second Conditionals (Eğer / Şart Cümleleri: Type 1 & 2)",
+    "level": "B1",
+    "description": "Gerçekleşme ihtimali olan (Type 1) veya varsayımsal/hayali (Type 2) olaylar.",
+    "explanation": "**Type 1 (Gerçek Olasılıklar):** If + Present Simple, ... will + V1\n- If the weather is bad, the flight will be delayed. (Eğer hava kötüyse...)\n\n**Type 2 (Varsayım / Hayali Durumlar):** If + Past Simple, ... would + V1\n- If I were the captain, I would divert the plane. (Ben kaptan olsaydım, uçağı yönlendirirdim - ama değilim)\n\n**Havacılık Örnekleri:**\n- If the engine fails, the pilot will follow emergency protocols.\n- If we had more fuel, we wouldn't need to land in Rome.",
+    "aviationContext": "Risk değerlendirmesinde ve simülasyon eğitimlerinde (What if senaryolarında) şart cümleleri sürekli konuşulur.",
+    "exercises": [
+      {
+        "type": "fillBlank",
+        "question": "If you push that button, the alarm ___ (sound).",
+        "answer": "will sound",
+        "options": [
+          "sounded",
+          "sounds",
+          "will sound",
+          "would sound"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "If we ___ (have) fewer passengers, the plane would be lighter.",
+        "answer": "had",
+        "options": [
+          "have",
+          "had",
+          "will have",
+          "have had"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Rüzgar durursa kalkış yapacağız.",
+        "answer": "If the wind stops, we will take off."
+      },
+      {
+        "type": "correctError",
+        "question": "If the fog cleared, we will depart.",
+        "answer": "If the fog clears, we will depart."
+      }
+    ]
+  },
+  {
+    "id": "b1_grammar_03",
+    "title": "Passive Voice (Edilgen Yapı)",
+    "level": "B1",
+    "description": "Eylemin kimin tarafından yapıldığından ziyade yapılan işe odaklanmak istendiğinde kullanılır.",
+    "explanation": "**Yapı:** (Obj) + be + V3 (Past Participle)\n\n**Geniş Zaman:** The aircraft is checked daily. (Uçak her gün kontrol edilir.)\n**Geçmiş Zaman:** The flight was canceled yesterday. (Uçuş dün iptal edildi.)\n**Gelecek Zaman:** Breakfast will be served shortly. (Kahvaltı birazdan servis edilecek.)\n\n**Havacılık Örnekleri:**\n- The runway is cleared for you. (Pist sizin için temizlendi/boşaltıldı.)\n- Passengers are required to remain seated. (Yolcuların oturması gerekmektedir.)",
+    "aviationContext": "Resmi kule mesajlarında ve kabin duyurularında kişisel olmamak için edilgen çatı kullanılır.",
+    "exercises": [
+      {
+        "type": "fillBlank",
+        "question": "The doors ___ (close) 10 minutes ago.",
+        "answer": "were closed",
+        "options": [
+          "are closed",
+          "closed",
+          "were closed",
+          "was closed"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "All tickets ___ (sell) online now.",
+        "answer": "are sold",
+        "options": [
+          "sell",
+          "are selling",
+          "are sold",
+          "is sold"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Bu uçak Amerika'da yapıldı.",
+        "answer": "This airplane was made in America."
+      },
+      {
+        "type": "correctError",
+        "question": "The engine repaired yesterday.",
+        "answer": "The engine was repaired yesterday."
+      }
+    ]
+  }
+]

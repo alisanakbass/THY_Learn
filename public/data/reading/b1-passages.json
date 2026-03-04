@@ -1,0 +1,69 @@
+[
+  {
+    "id": "b1_read_01",
+    "title": "Emergency Landing in the Hudson River",
+    "level": "B1",
+    "category": "aviation",
+    "text": "On January 15, 2009, US Airways Flight 1549 took off from New York's LaGuardia Airport. Almost immediately after takeoff, a flock of Canada geese struck both engines of the Airbus A320. The collision caused a complete loss of engine power. \n\nCaptain Chesley 'Sully' Sullenberger and First Officer Jeffrey Skiles realized they couldn't reach any nearby airports. With only seconds to react, Captain Sully made a historic decision: he would ditch (land in water) the aircraft into the icy Hudson River.\n\nThanks to the pilots' remarkable skills and teamwork, the aircraft glided smoothly into the water. Incredibly, all 155 passengers and crew members survived. Ferry boats and rescue teams arrived quickly to pull people from the wings of the floating jet. This event later became known as the 'Miracle on the Hudson'.",
+    "textTr": "15 Ocak 2009'da US Airways'in 1549 sefer sayılı uçuşu New York'taki LaGuardia Havalimanı'ndan kalktı. Kalkıştan neredeyse hemen sonra, bir Kanada kazı sürüsü Airbus A320'nin her iki motoruna da çarptı (girdi). Çarpışma, motor gücünün tamamen kaybedilmesine yol açtı.\n\nKaptan Chesley 'Sully' Sullenberger ve İkinci Kaptan Jeffrey Skiles yakındaki herhangi bir havalimanına ulaşamayacaklarını fark ettiler. Tepki vermek için sadece saniyeleri olan Kaptan Sully, tarihi bir karar verdi: uçağı buz gibi Hudson Nehri'ne acil iniş yaptıracaktı.\n\nPilotların dikkate değer becerileri ve ekip çalışması sayesinde uçak pürüzsüzce suya süzüldü (planör gibi indi). İnanılmaz bir şekilde, uçaktaki 155 yolcu ve mürettebatın hepsi hayatta kaldı. Feribotlar ve kurtarma ekipleri, insanları yüzen jetin kanatlarından çekip almak için hızla olay yerine vardı. Bu olay daha sonra 'Hudson Mucizesi' olarak bilinir oldu.",
+    "questions": [
+      {
+        "question": "What caused the engine failure?",
+        "options": [
+          "A storm",
+          "A flock of birds",
+          "A mechanical error",
+          "Lack of fuel"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "When did the engines lose power?",
+        "options": [
+          "Before landing",
+          "In the parking area",
+          "Immediately after takeoff",
+          "In the ocean"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Where did the captain decide to land?",
+        "options": [
+          "Back at LaGuardia",
+          "New Jersey Airport",
+          "On a highway",
+          "In the Hudson River"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "How many people died in the accident?",
+        "options": [
+          "155",
+          "5",
+          "None, they all survived",
+          "Half of the passengers"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "What is 'ditching'?",
+        "options": [
+          "Dropping luggage",
+          "Turning the airplane",
+          "Landing in water",
+          "Opening the doors"
+        ],
+        "answer": 2
+      }
+    ],
+    "vocabulary": [
+      "flock",
+      "collision",
+      "ditch",
+      "glided",
+      "survive"
+    ]
+  }
+]

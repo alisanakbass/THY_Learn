@@ -1,0 +1,246 @@
+.dashboard-stats {
+  margin-bottom: var(--space-xl);
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-lg);
+}
+
+.card-header h2 {
+  font-size: var(--fs-lg);
+  font-weight: 700;
+}
+
+/* Goals */
+.goal-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.goal-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.goal-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--fs-sm);
+  color: var(--text-secondary);
+}
+
+.goal-count {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Timer */
+.timer-display {
+  text-align: center;
+  margin: var(--space-xl) 0;
+}
+
+.timer-time {
+  font-size: 3.5rem;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  background: linear-gradient(
+    135deg,
+    var(--accent-gold),
+    var(--accent-gold-light)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.timer-controls {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+}
+
+/* Word of Day */
+.wod-content {
+  text-align: center;
+}
+
+.wod-word {
+  font-size: var(--fs-3xl);
+  font-weight: 800;
+  color: var(--accent-gold-light);
+  margin-bottom: var(--space-xs);
+}
+
+.wod-pronunciation {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.wod-meaning {
+  font-size: var(--fs-xl);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-md);
+}
+
+.wod-example {
+  padding: var(--space-md);
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--accent-gold);
+}
+
+.wod-example-en {
+  font-style: italic;
+  color: var(--text-primary);
+  margin-bottom: var(--space-xs);
+  font-size: var(--fs-sm);
+}
+
+.wod-example-tr {
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+}
+
+/* Level Progress */
+.level-progress-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: var(--space-md) 0;
+}
+
+.level-line {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  right: 10%;
+  height: 3px;
+  background: var(--bg-tertiary);
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.level-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  position: relative;
+  z-index: 1;
+}
+
+.level-dot {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: var(--fs-sm);
+  color: white;
+  background: var(--bg-tertiary);
+  border: 3px solid var(--border-color);
+  transition: all var(--transition-normal);
+}
+
+.level-step-active .level-dot {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px rgba(244, 196, 48, 0.4);
+}
+
+.level-step-done .level-dot {
+  background: var(--accent-green) !important;
+  border-color: var(--accent-green);
+}
+
+.level-step-label {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.level-step-active .level-step-label {
+  color: var(--accent-gold-light);
+}
+
+/* Quick Actions */
+.dashboard-actions h2 {
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  margin-bottom: var(--space-lg);
+}
+
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-md);
+}
+
+.action-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-lg) var(--space-md);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-normal);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.action-card:hover {
+  border-color: var(--action-color);
+  box-shadow: 0 0 20px color-mix(in srgb, var(--action-color) 20%, transparent);
+  transform: translateY(-4px);
+}
+
+.action-icon {
+  font-size: 2rem;
+}
+
+.action-label {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.action-card:hover .action-label {
+  color: var(--text-primary);
+}
+
+@media (max-width: 1200px) {
+  .grid-5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-5 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

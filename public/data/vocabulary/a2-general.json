@@ -1,0 +1,205 @@
+[
+  {
+    "id": "a2_001",
+    "en": "hello",
+    "tr": "merhaba",
+    "example": "Hello, how are you?",
+    "exampleTr": "Merhaba, nasılsın?",
+    "pronunciation": "/həˈloʊ/",
+    "category": "greeting",
+    "level": "A2",
+    "family": {
+      "noun": "hello",
+      "interjection": "hello"
+    }
+  },
+  {
+    "id": "a2_002",
+    "en": "goodbye",
+    "tr": "hoşça kal",
+    "example": "Goodbye, see you tomorrow.",
+    "exampleTr": "Hoşça kal, yarın görüşürüz.",
+    "pronunciation": "/ɡʊdˈbaɪ/",
+    "category": "greeting",
+    "level": "A2",
+    "family": {
+      "noun": "goodbye"
+    }
+  },
+  {
+    "id": "a2_003",
+    "en": "please",
+    "tr": "lütfen",
+    "example": "Please sit down.",
+    "exampleTr": "Lütfen oturun.",
+    "pronunciation": "/pliːz/",
+    "category": "basic",
+    "level": "A2",
+    "family": {}
+  },
+  {
+    "id": "a2_004",
+    "en": "thank you",
+    "tr": "teşekkür ederim",
+    "example": "Thank you for your help.",
+    "exampleTr": "Yardımın için teşekkür ederim.",
+    "pronunciation": "/θæŋk juː/",
+    "category": "basic",
+    "level": "A2",
+    "family": {
+      "noun": "thanks",
+      "verb": "thank"
+    }
+  },
+  {
+    "id": "a2_005",
+    "en": "yes",
+    "tr": "evet",
+    "example": "Yes, I understand.",
+    "exampleTr": "Evet, anlıyorum.",
+    "pronunciation": "/jɛs/",
+    "category": "basic",
+    "level": "A2",
+    "family": {}
+  },
+  {
+    "id": "a2_006",
+    "en": "no",
+    "tr": "hayır",
+    "example": "No, I don't agree.",
+    "exampleTr": "Hayır, katılmıyorum.",
+    "pronunciation": "/noʊ/",
+    "category": "basic",
+    "level": "A2",
+    "family": {}
+  },
+  {
+    "id": "a2_007",
+    "en": "water",
+    "tr": "su",
+    "example": "Can I have some water?",
+    "exampleTr": "Biraz su alabilir miyim?",
+    "pronunciation": "/ˈwɔːtər/",
+    "category": "food",
+    "level": "A2",
+    "family": {
+      "noun": "water",
+      "verb": "water",
+      "adjective": "watery"
+    }
+  },
+  {
+    "id": "a2_008",
+    "en": "food",
+    "tr": "yemek",
+    "example": "The food is delicious.",
+    "exampleTr": "Yemek lezzetli.",
+    "pronunciation": "/fuːd/",
+    "category": "food",
+    "level": "A2",
+    "family": {
+      "noun": "food",
+      "verb": "feed"
+    }
+  },
+  {
+    "id": "a2_009",
+    "en": "house",
+    "tr": "ev",
+    "example": "I live in a big house.",
+    "exampleTr": "Büyük bir evde yaşıyorum.",
+    "pronunciation": "/haʊs/",
+    "category": "place",
+    "level": "A2",
+    "family": {
+      "noun": "house",
+      "verb": "house",
+      "adjective": "household"
+    }
+  },
+  {
+    "id": "a2_010",
+    "en": "car",
+    "tr": "araba",
+    "example": "I drive a red car.",
+    "exampleTr": "Kırmızı bir araba sürüyorum.",
+    "pronunciation": "/kɑːr/",
+    "category": "transport",
+    "level": "A2",
+    "family": {
+      "noun": "car"
+    }
+  },
+  {
+    "id": "a2_011",
+    "en": "book",
+    "tr": "kitap",
+    "example": "I am reading a book.",
+    "exampleTr": "Bir kitap okuyorum.",
+    "pronunciation": "/bʊk/",
+    "category": "object",
+    "level": "A2",
+    "family": {
+      "noun": "book",
+      "verb": "book",
+      "adjective": "bookish"
+    }
+  },
+  {
+    "id": "a2_012",
+    "en": "school",
+    "tr": "okul",
+    "example": "I go to school every day.",
+    "exampleTr": "Her gün okula giderim.",
+    "pronunciation": "/skuːl/",
+    "category": "place",
+    "level": "A2",
+    "family": {
+      "noun": "school",
+      "adjective": "scholarly"
+    }
+  },
+  {
+    "id": "a2_013",
+    "en": "name",
+    "tr": "isim",
+    "example": "My name is Ali.",
+    "exampleTr": "Benim adım Ali.",
+    "pronunciation": "/neɪm/",
+    "category": "basic",
+    "level": "A2",
+    "family": {
+      "noun": "name",
+      "verb": "name"
+    }
+  },
+  {
+    "id": "a2_014",
+    "en": "family",
+    "tr": "aile",
+    "example": "I have a big family.",
+    "exampleTr": "Büyük bir ailem var.",
+    "pronunciation": "/ˈfæməli/",
+    "category": "people",
+    "level": "A2",
+    "family": {
+      "noun": "family",
+      "adjective": "familial"
+    }
+  },
+  {
+    "id": "a2_015",
+    "en": "friend",
+    "tr": "arkadaş",
+    "example": "She is my best friend.",
+    "exampleTr": "O benim en iyi arkadaşım.",
+    "pronunciation": "/frɛnd/",
+    "category": "people",
+    "level": "A2",
+    "family": {
+      "noun": "friend/friendship",
+      "adjective": "friendly",
+      "adverb": "friendlily"
+    }
+  }
+]

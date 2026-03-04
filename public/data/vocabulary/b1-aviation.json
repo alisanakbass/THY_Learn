@@ -1,0 +1,102 @@
+[
+  {
+    "id": "b1_av_001",
+    "en": "fuselage",
+    "tr": "uçak gövdesi",
+    "example": "The fuselage was painted with the airline's new colors.",
+    "exampleTr": "Uçak gövdesi havayolunun yeni renkleriyle boyandı.",
+    "pronunciation": "/ˈfjuːzəlɑːʒ/",
+    "category": "technical",
+    "level": "B1"
+  },
+  {
+    "id": "b1_av_002",
+    "en": "clearance",
+    "tr": "müsaade/izin",
+    "example": "We are waiting for ATC clearance to start engines.",
+    "exampleTr": "Kule'den motorıştırma izni (müsaadesi) bekliyoruz.",
+    "pronunciation": "/ˈklɪrəns/",
+    "category": "technical",
+    "level": "B1"
+  },
+  {
+    "id": "b1_av_003",
+    "en": "visibility",
+    "tr": "görüş mesafesi",
+    "example": "Visibility is down to 100 meters due to heavy fog.",
+    "exampleTr": "Yoğun sis yüzünden görüş mesafesi 100 metreye düştü.",
+    "pronunciation": "/ˌvɪzɪˈbɪlɪti/",
+    "category": "weather",
+    "level": "B1"
+  },
+  {
+    "id": "b1_av_004",
+    "en": "ditch",
+    "tr": "suya iniş yapmak (kaza)",
+    "example": "The pilot was forced to ditch the plane in the ocean.",
+    "exampleTr": "Pilot uçağı okyanusa indirmeye/çakmaya zorlandı.",
+    "pronunciation": "/dɪtʃ/",
+    "category": "technical",
+    "level": "B1"
+  },
+  {
+    "id": "b1_av_005",
+    "en": "taxi",
+    "tr": "taksi (uçağın yerde yürümesi)",
+    "example": "The airplane will taxi to runway 9L.",
+    "exampleTr": "Uçak 9L pistine kadar yerde ilerleyecek.",
+    "pronunciation": "/ˈtæksi/",
+    "category": "aviation",
+    "level": "B1"
+  },
+  {
+    "id": "b1_av_006",
+    "en": "apron",
+    "tr": "apron (park alanı)",
+    "example": "The bus will take passengers to the apron.",
+    "exampleTr": "Otobüs yolcuları aprona kadar götürecek.",
+    "pronunciation": "/ˈeɪprən/",
+    "category": "aviation",
+    "level": "B1"
+  },
+  {
+    "id": "b1_av_007",
+    "en": "mayday",
+    "tr": "acı durum / imdat",
+    "example": "The captain declared a mayday due to dual engine failure.",
+    "exampleTr": "Kaptan iki motorun susması yüzünden mayday ilan etti.",
+    "pronunciation": "/ˈmeɪdeɪ/",
+    "category": "aviation",
+    "level": "B1"
+  },
+  {
+    "id": "b1_av_008",
+    "en": "tail",
+    "tr": "kuyruk",
+    "example": "There is a logo on the vertical tail.",
+    "exampleTr": "Dikey kuyruğun üzerinde bir amblem var.",
+    "pronunciation": "/teɪl/",
+    "category": "technical",
+    "level": "B1"
+  },
+  {
+    "id": "b1_av_009",
+    "en": "evacuation",
+    "tr": "tahliye",
+    "example": "The emergency evacuation took only 90 seconds.",
+    "exampleTr": "Acil durum tahliyesi sadece 90 saniye sürdü.",
+    "pronunciation": "/ɪˌvækjuˈeɪʃən/",
+    "category": "technical",
+    "level": "B1"
+  },
+  {
+    "id": "b1_av_010",
+    "en": "velocity",
+    "tr": "hız/sürat",
+    "example": "Wind velocity is increasing rapidly.",
+    "exampleTr": "Rüzgar sürati hızla artıyor.",
+    "pronunciation": "/vəˈlɑːsɪti/",
+    "category": "weather",
+    "level": "B1"
+  }
+]

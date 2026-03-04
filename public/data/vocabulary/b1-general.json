@@ -1,0 +1,214 @@
+[
+  {
+    "id": "b1_016",
+    "en": "work",
+    "tr": "iş/çalışmak",
+    "example": "I work at a hospital.",
+    "exampleTr": "Bir hastanede çalışıyorum.",
+    "pronunciation": "/wɜːrk/",
+    "category": "daily",
+    "level": "B1",
+    "family": {
+      "noun": "work/worker",
+      "verb": "work",
+      "adjective": "working"
+    }
+  },
+  {
+    "id": "b1_017",
+    "en": "time",
+    "tr": "zaman",
+    "example": "What time is it?",
+    "exampleTr": "Saat kaç?",
+    "pronunciation": "/taɪm/",
+    "category": "basic",
+    "level": "B1",
+    "family": {
+      "noun": "time",
+      "adjective": "timely",
+      "adverb": "timely"
+    }
+  },
+  {
+    "id": "b1_018",
+    "en": "day",
+    "tr": "gün",
+    "example": "Today is a beautiful day.",
+    "exampleTr": "Bugün güzel bir gün.",
+    "pronunciation": "/deɪ/",
+    "category": "time",
+    "level": "B1",
+    "family": {
+      "noun": "day",
+      "adjective": "daily"
+    }
+  },
+  {
+    "id": "b1_019",
+    "en": "night",
+    "tr": "gece",
+    "example": "Good night, sleep well.",
+    "exampleTr": "İyi geceler, iyi uykular.",
+    "pronunciation": "/naɪt/",
+    "category": "time",
+    "level": "B1",
+    "family": {
+      "noun": "night",
+      "adjective": "nightly"
+    }
+  },
+  {
+    "id": "b1_020",
+    "en": "morning",
+    "tr": "sabah",
+    "example": "Good morning, captain.",
+    "exampleTr": "Günaydın, kaptan.",
+    "pronunciation": "/ˈmɔːrnɪŋ/",
+    "category": "time",
+    "level": "B1",
+    "family": {
+      "noun": "morning"
+    }
+  },
+  {
+    "id": "b1_021",
+    "en": "eat",
+    "tr": "yemek yemek",
+    "example": "I eat breakfast at 7.",
+    "exampleTr": "Saat 7'de kahvaltı yaparım.",
+    "pronunciation": "/iːt/",
+    "category": "daily",
+    "level": "B1",
+    "family": {
+      "verb": "eat",
+      "noun": "eater/eating"
+    }
+  },
+  {
+    "id": "b1_022",
+    "en": "drink",
+    "tr": "içmek",
+    "example": "I drink coffee every morning.",
+    "exampleTr": "Her sabah kahve içerim.",
+    "pronunciation": "/drɪŋk/",
+    "category": "daily",
+    "level": "B1",
+    "family": {
+      "verb": "drink",
+      "noun": "drink/drinker"
+    }
+  },
+  {
+    "id": "b1_023",
+    "en": "sleep",
+    "tr": "uyumak",
+    "example": "I sleep eight hours a night.",
+    "exampleTr": "Gecede sekiz saat uyurum.",
+    "pronunciation": "/sliːp/",
+    "category": "daily",
+    "level": "B1",
+    "family": {
+      "verb": "sleep",
+      "noun": "sleep",
+      "adjective": "sleepy"
+    }
+  },
+  {
+    "id": "b1_024",
+    "en": "walk",
+    "tr": "yürümek",
+    "example": "I walk to work.",
+    "exampleTr": "İşe yürüyerek giderim.",
+    "pronunciation": "/wɔːk/",
+    "category": "daily",
+    "level": "B1",
+    "family": {
+      "verb": "walk",
+      "noun": "walk/walker"
+    }
+  },
+  {
+    "id": "b1_025",
+    "en": "run",
+    "tr": "koşmak",
+    "example": "I run every morning.",
+    "exampleTr": "Her sabah koşarım.",
+    "pronunciation": "/rʌn/",
+    "category": "daily",
+    "level": "B1",
+    "family": {
+      "verb": "run",
+      "noun": "run/runner",
+      "adjective": "running"
+    }
+  },
+  {
+    "id": "b1_026",
+    "en": "big",
+    "tr": "büyük",
+    "example": "The airplane is very big.",
+    "exampleTr": "Uçak çok büyük.",
+    "pronunciation": "/bɪɡ/",
+    "category": "adjective",
+    "level": "B1",
+    "family": {
+      "adjective": "big/bigger/biggest"
+    }
+  },
+  {
+    "id": "b1_027",
+    "en": "small",
+    "tr": "küçük",
+    "example": "I have a small bag.",
+    "exampleTr": "Küçük bir çantam var.",
+    "pronunciation": "/smɔːl/",
+    "category": "adjective",
+    "level": "B1",
+    "family": {
+      "adjective": "small/smaller/smallest"
+    }
+  },
+  {
+    "id": "b1_028",
+    "en": "good",
+    "tr": "iyi",
+    "example": "The weather is good today.",
+    "exampleTr": "Bugün hava iyi.",
+    "pronunciation": "/ɡʊd/",
+    "category": "adjective",
+    "level": "B1",
+    "family": {
+      "adjective": "good/better/best",
+      "noun": "goodness"
+    }
+  },
+  {
+    "id": "b1_029",
+    "en": "bad",
+    "tr": "kötü",
+    "example": "The weather is bad.",
+    "exampleTr": "Hava kötü.",
+    "pronunciation": "/bæd/",
+    "category": "adjective",
+    "level": "B1",
+    "family": {
+      "adjective": "bad/worse/worst",
+      "adverb": "badly"
+    }
+  },
+  {
+    "id": "b1_030",
+    "en": "happy",
+    "tr": "mutlu",
+    "example": "I am very happy today.",
+    "exampleTr": "Bugün çok mutluyum.",
+    "pronunciation": "/ˈhæpi/",
+    "category": "emotion",
+    "level": "B1",
+    "family": {
+      "adjective": "happy/happier/happiest",
+      "noun": "happiness",
+      "adverb": "happily"
+    }
+  }
+]

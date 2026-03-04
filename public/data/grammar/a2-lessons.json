@@ -1,0 +1,170 @@
+[
+  {
+    "id": "a2_grammar_01",
+    "title": "Past Continuous Tense (Geçmişte Devam Eden Zaman)",
+    "level": "A2",
+    "description": "Geçmişte belirli bir zamanda veya başka bir olay olurken devam etmekte olan eylemleri anlatır.",
+    "explanation": "**Yapı:** Subject + was/were + Verb-ing\n\n**Olumlu:** I was flying over the Alps. They were waiting at the gate.\n**Olumsuz:** She wasn't preparing the cabin. The mechanic wasn't checking the engines.\n**Soru:** Were you sleeping? Was the wind blowing strongly?\n\n**Havacılık Örnekleri:**\n- We were flying at 35,000 feet when the engine alarms started. (Motor alarmları başladığında uçuyorduk.)\n- The passengers were boarding while it was raining. (Yağmur yağarken yolcular uçağa biniyordu.)",
+    "aviationContext": "Bir kaza araştırmasında veya bir durum geçmişte raporlanırken sık kullanılır: 'What were you doing when you heard the noise?'",
+    "exercises": [
+      {
+        "type": "fillBlank",
+        "question": "The pilot ___ (sleep) in the crew rest area when the turbulence started.",
+        "answer": "was sleeping",
+        "options": [
+          "slept",
+          "was sleeping",
+          "sleeps",
+          "is sleeping"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "___ the passengers ___ (watch) the safety video?",
+        "answer": "Were...watching",
+        "options": [
+          "Was...watching",
+          "Were...watching",
+          "Did...watch",
+          "Are...watching"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Uçak fırtınanın içinden uçuyordu.",
+        "answer": "The airplane was flying through the storm."
+      },
+      {
+        "type": "correctError",
+        "question": "I were talking to the tower.",
+        "answer": "I was talking to the tower."
+      }
+    ]
+  },
+  {
+    "id": "a2_grammar_02",
+    "title": "Comparatives & Superlatives (Karşılaştırmalar ve En Üstünlük)",
+    "level": "A2",
+    "description": "Birden fazla nesneyi/durumu birbirleriyle kıyaslarken kullanılır.",
+    "explanation": "**Kısa Sıfatlar:** +er / +est (fast - faster - fastest) -> The A380 is bigger than the 737.\n**Uzun Sıfatlar:** more / most (comfortable - more comfortable - most comfortable)\n**Düzensiz:** good -> better -> best, bad -> worse -> worst\n\n**Havacılık Örnekleri:**\n- The flight to London is longer than the flight to Athens. (Londra uçuşu Atina'dan daha uzundur.)\n- This was the worst turbulence I have experienced. (Bu yaşadığım en kötü türbülanstı.)\n- Flying is the safest way to travel. (Uçmak en güvenli seyahat yoludur.)",
+    "aviationContext": "Uçak tiplerini, hava koşullarını veya rota seçeneklerini karşılaştırırken kullanılır.",
+    "exercises": [
+      {
+        "type": "fillBlank",
+        "question": "The Boeing 777 is ___ (heavy) than the A320.",
+        "answer": "heavier",
+        "options": [
+          "heavy",
+          "more heavy",
+          "heavier",
+          "heaviest"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "What is the ___ (good) airline in the world?",
+        "answer": "best",
+        "options": [
+          "gooder",
+          "better",
+          "best",
+          "most good"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Bu havalimanı eskisinden daha büyük.",
+        "answer": "This airport is bigger than the old one."
+      },
+      {
+        "type": "correctError",
+        "question": "This is the more difficult landing I did.",
+        "answer": "This is the most difficult landing I did."
+      }
+    ]
+  },
+  {
+    "id": "a2_grammar_03",
+    "title": "Modals of Obligation (Zorunluluk - Must & Have to)",
+    "level": "A2",
+    "description": "Kuralları, zorunlulukları ve güçlü tavsiyeleri ifade eder.",
+    "explanation": "**Must:** İçsel zorunluluklar veya güçlü emirler (I must rest before the flight / You must fasten seatbelts).\n**Have to:** Dış kurallar veya yasalar (Pilots have to pass medical exams).\n**Muntn't:** Yasak! (You mustn't smoke in the toilet).\n**Don't have to:** Zorunlu değil, serbest (You don't have to wear a jacket).\n\n**Havacılık Örnekleri:**\n- Cabin crew must close the doors. (Kapatmak zorundalar - kural.)\n- We don't have to change planes in Dubai. (Dubai'de aktarma yapmak zorunda değiliz.)",
+    "aviationContext": "Güvenlik kuralları ve operasyon prosedürleri anlatılırken vazgeçilmezdir.",
+    "exercises": [
+      {
+        "type": "fillBlank",
+        "question": "Passengers ___ smoke on the airplane. It is illegal.",
+        "answer": "mustn't",
+        "options": [
+          "don't have to",
+          "mustn't",
+          "must",
+          "haven't to"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "Pilots ___ pass difficult tests.",
+        "answer": "have to",
+        "options": [
+          "has to",
+          "have to",
+          "must to",
+          "having to"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Pasaportunu göstermek zorundasın.",
+        "answer": "You have to show your passport."
+      },
+      {
+        "type": "correctError",
+        "question": "You don't must cross the runway.",
+        "answer": "You mustn't cross the runway."
+      }
+    ]
+  },
+  {
+    "id": "a2_grammar_04",
+    "title": "Future Tenses (Gelecek Zaman - Will vs. Going to)",
+    "level": "A2",
+    "description": "Gelecek planları (going to) ile anlık kararlar veya tahminler (will) arasındaki farktır.",
+    "explanation": "**Going To:** Önceden planlanmış niyetler (We are going to buy a new aircraft) veya kesin kanıtı olan olaylar (Look at those black clouds, it is going to rain).\n**Will:** Konuşma anındaki kararlar, tahminler veya söz vermeler (I will fly the next leg / We will arrive at 10 PM).\n\n**Havacılık Örnekleri:**\n- The flight will take 3 hours. (Tahmin)\n- We are going to land in 10 minutes. (Kuleye verilen kesin plan)\n- I will help you with your bag. (Anlık söz/teklif)",
+    "aviationContext": "Yolcuları veya kuleyi bir sonraki hamle için bilgilendirmek amacıyla kullanılır.",
+    "exercises": [
+      {
+        "type": "fillBlank",
+        "question": "I ___ (help) you find your seat.",
+        "answer": "will help",
+        "options": [
+          "will help",
+          "am going to help",
+          "am helping",
+          "help"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "Look at the radar! We ___ (hit) a storm.",
+        "answer": "are going to hit",
+        "options": [
+          "are going to hit",
+          "will hit",
+          "hit",
+          "hitting"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Ne zaman iniş yapacağız?",
+        "answer": "When are we going to land?"
+      },
+      {
+        "type": "correctError",
+        "question": "I am opening the door for you.",
+        "answer": "I will open the door for you."
+      }
+    ]
+  }
+]

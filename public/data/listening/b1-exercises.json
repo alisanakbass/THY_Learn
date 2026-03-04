@@ -1,0 +1,56 @@
+[
+  {
+    "id": "b1_listen_01",
+    "title": "Emergency Declaration (Mayday)",
+    "level": "B1",
+    "type": "emergency",
+    "text": "MAYDAY, MAYDAY, MAYDAY. Heathrow Tower, Speedbird Five Two. We have lost power in engine number two. We are declaring an emergency and requesting immediate vector for an emergency landing. Passengers count 180, fuel remaining 4 hours.",
+    "textTr": "MAYDAY, MAYDAY, MAYDAY. (İmdat çağrısı) Heathrow Kule, British Airways 52. İki numaralı motorda güç kaybettik. Acil durum ilan ediyoruz ve acil iniş için derhal yönlendirme (vektör) talep ediyoruz. Yolcu sayısı 180, kalan yakıt 4 saat.",
+    "questions": [
+      {
+        "question": "What is the nature of the emergency?",
+        "options": [
+          "Engine fire",
+          "Cabin depressurization",
+          "Lost power in an engine",
+          "Hijacking"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "What does the pilot request?",
+        "options": [
+          "Medical assistance",
+          "Immediate vector for landing",
+          "To dump fuel",
+          "More coffee"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "How many passengers are on board?",
+        "options": [
+          "4",
+          "52",
+          "180",
+          "200"
+        ],
+        "answer": 2
+      }
+    ],
+    "fillBlanks": [
+      {
+        "text": "We have lost power in ___ number two.",
+        "answer": "engine"
+      },
+      {
+        "text": "We are declaring an ___.",
+        "answer": "emergency"
+      },
+      {
+        "text": "Requesting immediate ___ for landing.",
+        "answer": "vector"
+      }
+    ]
+  }
+]

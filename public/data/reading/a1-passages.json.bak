@@ -1,0 +1,130 @@
+[
+  {
+    "id": "a1_read_01",
+    "title": "My Dream: Becoming a Pilot",
+    "level": "A1",
+    "category": "general",
+    "text": "My name is Ali. I am 25 years old. I live in Istanbul, Turkey. I want to be a pilot. I study English every day because pilots need to speak English very well.\n\nEvery morning, I wake up at 6 o'clock. I eat breakfast and then I study English for two hours. I learn new words and practice grammar.\n\nIn the afternoon, I go to flight school. I learn about airplanes, weather, and navigation. My teacher is a retired captain from Turkish Airlines. He is very kind and helpful.\n\nAt night, I read books about aviation. I also watch English movies to improve my listening. I am very happy because my dream is getting closer every day.\n\nI know it is not easy to become a pilot, but I work hard every day. One day, I will fly a big airplane for Turkish Airlines.",
+    "textTr": "Benim adım Ali. 25 yaşındayım. İstanbul, Türkiye'de yaşıyorum. Pilot olmak istiyorum. Her gün İngilizce çalışıyorum çünkü pilotların çok iyi İngilizce konuşması gerekiyor.\n\nHer sabah saat 6'da kalkarım. Kahvaltı yaparım ve sonra iki saat İngilizce çalışırım. Yeni kelimeler öğrenir ve gramer pratik yaparım.\n\nÖğleden sonra uçuş okuluna giderim. Uçaklar, hava durumu ve navigasyon hakkında öğrenirim. Öğretmenim Türk Hava Yolları'ndan emekli bir kaptan. Çok nazik ve yardımsever.\n\nGece havacılık hakkında kitaplar okurum. Dinleme becerimi geliştirmek için İngilizce filmler de izlerim. Çok mutluyum çünkü hayalim her gün yaklaşıyor.\n\nPilot olmanın kolay olmadığını biliyorum ama her gün çok çalışıyorum. Bir gün Türk Hava Yolları için büyük bir uçak uçuracağım.",
+    "questions": [
+      {
+        "question": "How old is Ali?",
+        "options": ["20", "23", "25", "28"],
+        "answer": 2
+      },
+      {
+        "question": "Why does Ali study English?",
+        "options": [
+          "For fun",
+          "For school",
+          "Because pilots need English",
+          "For travel"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "What time does Ali wake up?",
+        "options": ["5 o'clock", "6 o'clock", "7 o'clock", "8 o'clock"],
+        "answer": 1
+      },
+      {
+        "question": "Who is Ali's teacher?",
+        "options": [
+          "A young pilot",
+          "A flight attendant",
+          "A retired captain",
+          "An engineer"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "What does Ali do at night?",
+        "options": [
+          "He sleeps early",
+          "He reads aviation books",
+          "He exercises",
+          "He cooks"
+        ],
+        "answer": 1
+      }
+    ],
+    "vocabulary": [
+      "dream",
+      "pilot",
+      "flight school",
+      "navigation",
+      "retired",
+      "captain",
+      "improve",
+      "aviation"
+    ]
+  },
+  {
+    "id": "a1_read_02",
+    "title": "A Day at the Airport",
+    "level": "A1",
+    "category": "aviation",
+    "text": "Istanbul Airport is one of the biggest airports in the world. Every day, thousands of people come here to fly to different countries.\n\nWhen you arrive at the airport, first you go to the check-in counter. You show your passport and ticket. The agent gives you a boarding pass. Then you go through security.\n\nAfter security, you wait at the gate. You can see the airplanes through the big windows. Some are taking off and some are landing. It is very exciting to watch.\n\nWhen it is time to board, you show your boarding pass and walk through the jet bridge to the airplane. You find your seat and put your luggage in the overhead bin.\n\nThe flight attendants welcome you and help you with your seatbelt. Then the captain makes an announcement. The airplane starts to move to the runway. And then... takeoff!\n\nFlying is amazing. You can see the clouds below you and tiny buildings on the ground. The world looks very different from 35,000 feet.",
+    "textTr": "İstanbul Havalimanı dünyanın en büyük havalimanlarından biridir. Her gün binlerce insan farklı ülkelere uçmak için buraya gelir.\n\nHavalimanına vardığınızda önce check-in kontuarına gidersiniz. Pasaportunuzu ve biletinizi gösterirsiniz. Görevli size biniş kartı verir. Sonra güvenlikten geçersiniz.\n\nGüvenlikten sonra kapıda beklersiniz. Büyük pencerelerden uçakları görebilirsiniz. Bazıları kalkıyor bazıları iniyor. İzlemesi çok heyecan verici.\n\nBinme zamanı geldiğinde biniş kartınızı gösterir ve körükten uçağa yürürsünüz. Koltuğunuzu bulur ve bagajınızı üst bölmeye koyarsınız.\n\nKabin görevlileri sizi karşılar ve emniyet kemeriniz konusunda yardım eder. Sonra kaptan bir anons yapar. Uçak piste doğru hareket etmeye başlar. Ve sonra... kalkış!\n\nUçmak harika. Bulutları altınızda ve yerdeki minik binaları görebilirsiniz. Dünya 35.000 feet'ten çok farklı görünür.",
+    "questions": [
+      {
+        "question": "What is the first thing you do at the airport?",
+        "options": [
+          "Go to the gate",
+          "Go to check-in",
+          "Board the plane",
+          "Go through security"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "What do you show at check-in?",
+        "options": [
+          "Only your ticket",
+          "Your passport and ticket",
+          "Your luggage",
+          "Your boarding pass"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Where do you put your luggage on the plane?",
+        "options": [
+          "On your seat",
+          "Under your seat",
+          "In the overhead bin",
+          "At the gate"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Who makes the announcement before takeoff?",
+        "options": [
+          "The flight attendant",
+          "The passenger",
+          "The captain",
+          "The agent"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "At what altitude does the world look different?",
+        "options": ["10,000 feet", "20,000 feet", "35,000 feet", "50,000 feet"],
+        "answer": 2
+      }
+    ],
+    "vocabulary": [
+      "check-in",
+      "passport",
+      "boarding pass",
+      "security",
+      "gate",
+      "jet bridge",
+      "overhead bin",
+      "flight attendant",
+      "announcement",
+      "runway",
+      "takeoff"
+    ]
+  }
+]

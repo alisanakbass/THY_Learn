@@ -1,0 +1,688 @@
+[
+  {
+    "id": "a1_grammar_01",
+    "title": "Present Simple Tense (Geniş Zaman)",
+    "level": "A1",
+    "description": "İngilizce'nin en temel zamanlarından biridir. Alışkanlıkları, genel doğruları ve rutin olayları anlatmak için kullanılır.",
+    "explanation": "**Yapı:** Subject + Verb (+ s/es for he/she/it)\n\n**Olumlu:** I fly every day. / He flies every day.\n**Olumsuz:** I do not (don't) fly. / He does not (doesn't) fly.\n**Soru:** Do you fly? / Does he fly?\n\n**Kullanım Alanları:**\n- Alışkanlıklar: I wake up at 5 AM.\n- Genel doğrular: The sun rises in the east.\n- Program/Tarifeler: The flight departs at 10:00.\n\n**Havacılık Örnekleri:**\n- The captain checks the instruments before every flight.\n- Turkish Airlines flies to 300 destinations.\n- The tower controls all air traffic.",
+    "aviationContext": "Pilotlar, uçuş prosedürlerini ve standart işlemleri anlatırken Present Simple kullanır: 'The pilot checks the weather before departure.'",
+    "exercises": [
+      {
+        "type": "fillBlank",
+        "question": "The pilot ___ (check) the instruments before takeoff.",
+        "answer": "checks",
+        "options": [
+          "check",
+          "checks",
+          "checking",
+          "checked"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "I ___ (not/fly) on Sundays.",
+        "answer": "don't fly",
+        "options": [
+          "don't fly",
+          "doesn't fly",
+          "not fly",
+          "am not fly"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "___ the captain ___ (speak) English?",
+        "answer": "Does...speak",
+        "options": [
+          "Does...speak",
+          "Do...speak",
+          "Is...speak",
+          "Does...speaks"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "Turkish Airlines ___ (fly) to New York every day.",
+        "answer": "flies",
+        "options": [
+          "fly",
+          "flies",
+          "flying",
+          "flied"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "The crew ___ (prepare) the cabin before boarding.",
+        "answer": "prepares",
+        "options": [
+          "prepare",
+          "prepares",
+          "preparing",
+          "prepared"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Her gün okula giderim.",
+        "answer": "I go to school every day."
+      },
+      {
+        "type": "translate",
+        "question": "Pilot her uçuştan önce hava durumunu kontrol eder.",
+        "answer": "The pilot checks the weather before every flight."
+      },
+      {
+        "type": "correctError",
+        "question": "He don't like coffee.",
+        "answer": "He doesn't like coffee."
+      },
+      {
+        "type": "correctError",
+        "question": "She fly to London every week.",
+        "answer": "She flies to London every week."
+      },
+      {
+        "type": "sentenceBuild",
+        "words": [
+          "every",
+          "I",
+          "morning",
+          "at",
+          "wake up",
+          "6"
+        ],
+        "answer": "I wake up at 6 every morning."
+      }
+    ]
+  },
+  {
+    "id": "a1_grammar_02",
+    "title": "Present Continuous Tense (Şimdiki Zaman)",
+    "level": "A1",
+    "description": "Şu anda devam eden eylemleri anlatmak için kullanılır.",
+    "explanation": "**Yapı:** Subject + am/is/are + Verb-ing\n\n**Olumlu:** I am flying now. / He is flying now.\n**Olumsuz:** I am not flying. / He is not (isn't) flying.\n**Soru:** Are you flying? / Is he flying?\n\n**Kullanım Alanları:**\n- Şu an olan: I am reading a book right now.\n- Geçici durumlar: She is staying at a hotel this week.\n- Yakın gelecek planlar: We are flying to Paris tomorrow.\n\n**Havacılık Örnekleri:**\n- We are descending to flight level 250.\n- The passengers are boarding the aircraft.\n- I am requesting permission for pushback.",
+    "aviationContext": "Pilotlar anlık durumları bildirirken Present Continuous kullanır: 'We are climbing to flight level 350.'",
+    "exercises": [
+      {
+        "type": "fillBlank",
+        "question": "The airplane ___ (climb) to 35,000 feet right now.",
+        "answer": "is climbing",
+        "options": [
+          "climbs",
+          "is climbing",
+          "climbing",
+          "are climbing"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "The passengers ___ (board) the aircraft now.",
+        "answer": "are boarding",
+        "options": [
+          "board",
+          "boarding",
+          "are boarding",
+          "is boarding"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "I ___ (study) English at the moment.",
+        "answer": "am studying",
+        "options": [
+          "study",
+          "am studying",
+          "studying",
+          "is studying"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "The captain ___ (not/sleep) now. He ___ (fly) the plane.",
+        "answer": "is not sleeping...is flying",
+        "options": [
+          "is not sleeping...is flying",
+          "not sleeps...flies",
+          "doesn't sleep...flies",
+          "isn't sleep...is fly"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "___ you ___ (listen) to the ATC?",
+        "answer": "Are...listening",
+        "options": [
+          "Are...listening",
+          "Do...listen",
+          "Is...listening",
+          "Are...listen"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Uçak şu an inişe geçiyor.",
+        "answer": "The airplane is landing now."
+      },
+      {
+        "type": "translate",
+        "question": "Yolcular şu an uçağa biniyor.",
+        "answer": "The passengers are boarding the aircraft now."
+      },
+      {
+        "type": "correctError",
+        "question": "He is fly the airplane.",
+        "answer": "He is flying the airplane."
+      },
+      {
+        "type": "correctError",
+        "question": "They is waiting at the gate.",
+        "answer": "They are waiting at the gate."
+      },
+      {
+        "type": "sentenceBuild",
+        "words": [
+          "now",
+          "the",
+          "is",
+          "pilot",
+          "landing",
+          "the",
+          "plane"
+        ],
+        "answer": "The pilot is landing the plane now."
+      }
+    ]
+  },
+  {
+    "id": "a1_grammar_03",
+    "title": "Articles: A, An, The (Tanımlıklar)",
+    "level": "A1",
+    "description": "İngilizce'de isimlerin önüne gelen tanımlıklar (articles) ve kullanım kuralları.",
+    "explanation": "**A / An (Belirsiz Tanımlık):**\n- 'a' ünsüz ses ile başlayan kelimelerden önce: a pilot, a car\n- 'an' ünlü ses ile başlayan kelimelerden önce: an airplane, an engineer\n- İlk kez bahsedilen veya genel bir şey için kullanılır\n\n**The (Belirli Tanımlık):**\n- Daha önce bahsedilen veya bilinen bir şey için: The pilot (belirli bir pilot)\n- Tek olan şeyler: the sun, the sky, the captain (of this flight)\n\n**Kullanılmadığı Durumlar:**\n- Genel anlamda çoğul isimler: Pilots are brave.\n- Ülke isimleri (genellikle): Turkey, England\n- Öğünler: I have breakfast at 7.\n\n**Havacılık Örnekleri:**\n- A pilot must check the weather. (herhangi bir pilot / belirli hava durumu)\n- The captain is in the cockpit. (bu uçuşun kaptanı)\n- An emergency landing is required.",
+    "aviationContext": "Havacılıkta 'the' çok önemlidir: 'the runway' (belirli pist), 'a runway' (herhangi bir pist), 'the tower' (kontrol kulesi).",
+    "exercises": [
+      {
+        "type": "fillBlank",
+        "question": "___ airplane is ready for takeoff.",
+        "answer": "The",
+        "options": [
+          "A",
+          "An",
+          "The",
+          "-"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "He is ___ engineer at Turkish Airlines.",
+        "answer": "an",
+        "options": [
+          "a",
+          "an",
+          "the",
+          "-"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "I see ___ cloud in ___ sky.",
+        "answer": "a...the",
+        "options": [
+          "a...the",
+          "the...a",
+          "an...the",
+          "a...a"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "___ captain makes ___ announcement.",
+        "answer": "The...an",
+        "options": [
+          "The...an",
+          "A...the",
+          "The...a",
+          "A...an"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "She is ___ pilot. She loves ___ flying.",
+        "answer": "a...-",
+        "options": [
+          "a...-",
+          "a...the",
+          "the...-",
+          "an...the"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Pilot kokpitte.",
+        "answer": "The pilot is in the cockpit."
+      },
+      {
+        "type": "correctError",
+        "question": "I want to be a engineer.",
+        "answer": "I want to be an engineer."
+      },
+      {
+        "type": "correctError",
+        "question": "A sun is very hot today.",
+        "answer": "The sun is very hot today."
+      },
+      {
+        "type": "sentenceBuild",
+        "words": [
+          "the",
+          "is",
+          "on",
+          "airplane",
+          "runway",
+          "the"
+        ],
+        "answer": "The airplane is on the runway."
+      }
+    ]
+  },
+  {
+    "id": "a1_grammar_04",
+    "title": "To Be (Olmak Fiili)",
+    "level": "A1",
+    "description": "'To be' fiili İngilizce'nin en temel ve en çok kullanılan fiilidir.",
+    "explanation": "**Olumlu:**\n- I am (I'm) a pilot.\n- You are (You're) a student.\n- He/She/It is (He's) Turkish.\n- We/They are (We're) ready.\n\n**Olumsuz:**\n- I am not (I'm not) tired.\n- He is not (isn't) here.\n- They are not (aren't) late.\n\n**Soru:**\n- Am I late?\n- Is he a pilot?\n- Are they ready?\n\n**Havacılık Örnekleri:**\n- I am the captain of this flight.\n- The weather is clear.\n- We are at cruising altitude.\n- Are we cleared for takeoff?",
+    "aviationContext": "ATC iletişiminde 'to be' sık kullanılır: 'You are cleared for takeoff', 'The runway is clear', 'We are ready for departure'.",
+    "exercises": [
+      {
+        "type": "fillBlank",
+        "question": "I ___ a pilot.",
+        "answer": "am",
+        "options": [
+          "am",
+          "is",
+          "are",
+          "be"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "The weather ___ clear today.",
+        "answer": "is",
+        "options": [
+          "am",
+          "is",
+          "are",
+          "be"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "We ___ ready for takeoff.",
+        "answer": "are",
+        "options": [
+          "am",
+          "is",
+          "are",
+          "be"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "She ___ not a passenger. She ___ a crew member.",
+        "answer": "is...is",
+        "options": [
+          "is...is",
+          "are...are",
+          "am...am",
+          "is...are"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "___ you the captain?",
+        "answer": "Are",
+        "options": [
+          "Are",
+          "Is",
+          "Am",
+          "Do"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Ben bir öğrenciyim.",
+        "answer": "I am a student."
+      },
+      {
+        "type": "translate",
+        "question": "Onlar hazır değil.",
+        "answer": "They are not ready."
+      },
+      {
+        "type": "correctError",
+        "question": "He are a pilot.",
+        "answer": "He is a pilot."
+      },
+      {
+        "type": "correctError",
+        "question": "I is happy.",
+        "answer": "I am happy."
+      },
+      {
+        "type": "sentenceBuild",
+        "words": [
+          "is",
+          "the",
+          "in",
+          "pilot",
+          "cockpit",
+          "the"
+        ],
+        "answer": "The pilot is in the cockpit."
+      }
+    ]
+  },
+  {
+    "id": "a1_grammar_05",
+    "title": "Prepositions of Place (Yer Edatları)",
+    "level": "A1",
+    "description": "Nesnelerin ve kişilerin yerini belirtmek için kullanılan edatlar.",
+    "explanation": "**Temel Yer Edatları:**\n- **in**: içinde → in the cockpit, in the sky, in Turkey\n- **on**: üzerinde → on the runway, on the table, on the left\n- **at**: noktada → at the airport, at the gate, at home\n- **under**: altında → under the wing, under the seat\n- **next to**: yanında → next to the window, next to the pilot\n- **between**: arasında → between the seats\n- **behind**: arkasında → behind the cockpit\n- **in front of**: önünde → in front of the terminal\n- **above**: yukarısında → above the clouds\n- **below**: aşağısında → below the aircraft\n\n**Havacılık Örnekleri:**\n- The life vest is under your seat.\n- We are above the clouds.\n- The airport is below us.",
+    "aviationContext": "Yer edatları havacılıkta çok kritiktir: 'Traffic at your 2 o'clock', 'above/below flight level', 'on final approach'.",
+    "exercises": [
+      {
+        "type": "fillBlank",
+        "question": "The pilot is ___ the cockpit.",
+        "answer": "in",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "under"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "The airplane is ___ the runway.",
+        "answer": "on",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "under"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "We are flying ___ the clouds.",
+        "answer": "above",
+        "options": [
+          "above",
+          "under",
+          "in",
+          "on"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "The life vest is ___ your seat.",
+        "answer": "under",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "under"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "Meet me ___ gate 15.",
+        "answer": "at",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "under"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Uçak pistte.",
+        "answer": "The airplane is on the runway."
+      },
+      {
+        "type": "translate",
+        "question": "Bulutların üzerinde uçuyoruz.",
+        "answer": "We are flying above the clouds."
+      },
+      {
+        "type": "correctError",
+        "question": "The pilot is on the cockpit.",
+        "answer": "The pilot is in the cockpit."
+      },
+      {
+        "type": "sentenceBuild",
+        "words": [
+          "is",
+          "your",
+          "the",
+          "under",
+          "life vest",
+          "seat"
+        ],
+        "answer": "The life vest is under your seat."
+      }
+    ]
+  },
+  {
+    "id": "a1_grammar_06",
+    "title": "Simple Past Tense (Geçmiş Zaman) - To Be",
+    "level": "A1",
+    "description": "Geçmişteki durumları ve yerleri belirtmek için 'was/were' kullanılır.",
+    "explanation": "**Yapı:** Subject + was/were + Noun/Adjective\n\n**Olumlu:** I/He/She/It was at the airport. You/We/They were ready.\n**Olumsuz:** The weather wasn't (was not) good. The passengers weren't (were not) late.\n**Soru:** Were you a pilot? Was the flight on time?\n\n**Havacılık Örnekleri:**\n- Yesterday, the weather was very bad. (Dün hava çok kötüydü)\n- The airplane was on the runway 10 minutes ago. (Uçak 10 dakika önce pistteydi)",
+    "aviationContext": "Brifinglerde veya uçuş kontrol raporlarında geçmiş durumlardan bahsederken kullanılır: 'The wind was strong.'",
+    "exercises": [
+      {
+        "type": "fillBlank",
+        "question": "The weather ___ bad yesterday.",
+        "answer": "was",
+        "options": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "The passengers ___ happy with the flight.",
+        "answer": "were",
+        "options": [
+          "was",
+          "were",
+          "wasn't",
+          "is"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Kaptan dün kokpitte değildi.",
+        "answer": "The captain wasn't in the cockpit yesterday."
+      },
+      {
+        "type": "correctError",
+        "question": "We was at the gate.",
+        "answer": "We were at the gate."
+      }
+    ]
+  },
+  {
+    "id": "a1_grammar_07",
+    "title": "Simple Past Tense (Geçmiş Zaman) - Regular & Irregular Verbs",
+    "level": "A1",
+    "description": "Geçmişte tamamlanmış eylemleri ifade eder.",
+    "explanation": "**Düzenli Fiiller (Regular):** Fiil + ed (worked, arrived, pushed)\n**Düzensiz Fiiller (Irregular):** Kökten değişir (go -> went, fly -> flew, see -> saw)\n\n**Olumsuz (Negative):** Subject + didn't + Verb(yalın) (I didn't fly.)\n**Soru (Question):** Did + Subject + Verb(yalın)? (Did you take off?)\n\n**Havacılık Örnekleri:**\n- The plane landed 5 minutes ago. (Uçak 5 dakika önce indi)\n- We flew from Istanbul to London. (İstanbul'dan Londra'ya uçtuk)",
+    "aviationContext": "Uçuş loglarında veya kule iletişiminde geçmiş manevralar için çok önemlidir: 'We climbed to 30,000 feet.'",
+    "exercises": [
+      {
+        "type": "fillBlank",
+        "question": "The airplane ___ (land) safely an hour ago.",
+        "answer": "landed",
+        "options": [
+          "land",
+          "landed",
+          "lands",
+          "landing"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "We ___ (fly) to Paris last week.",
+        "answer": "flew",
+        "options": [
+          "flyed",
+          "flew",
+          "flies",
+          "flied"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Dün uçuş yapmadık.",
+        "answer": "We didn't fly yesterday."
+      },
+      {
+        "type": "correctError",
+        "question": "Did the pilot checked the engines?",
+        "answer": "Did the pilot check the engines?"
+      }
+    ]
+  },
+  {
+    "id": "a1_grammar_08",
+    "title": "Can / Can't (Yetenek ve İzin)",
+    "level": "A1",
+    "description": "Bir şeyi yapabilme yeteneğini, güncel ihtimali veya izin durumlarını belirtir.",
+    "explanation": "**Olumlu:** I can fly this plane. (Bu uçağı uçurabilirim)\n**Olumsuz:** We can't (cannot) take off in this weather. (Bu havada kalkış yapamayız)\n**Soru:** Can you see the runway? (Pisti görebiliyor musun?)\n\n**Havacılık Örnekleri:**\n- Can I have your passport, please? (Pasaportunuzu alabilir miyim?)\n- Passengers can't use their phones during takeoff. (Yolcular kalkış sırasında telefonlarını kullanamazlar.)",
+    "aviationContext": "İzin isterken veya ATC'ye bir durumu doğrularken sıkça kullanılır: 'Tower, we cannot see the runway/traffic.'",
+    "exercises": [
+      {
+        "type": "fillBlank",
+        "question": "___ you hear me, tower?",
+        "answer": "Can",
+        "options": [
+          "Do",
+          "Are",
+          "Can",
+          "Is"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "We ___ see the runway because of the fog.",
+        "answer": "can't",
+        "options": [
+          "can't",
+          "don't",
+          "aren't",
+          "doesn't"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Şimdi kalkış yapabiliriz.",
+        "answer": "We can take off now."
+      },
+      {
+        "type": "correctError",
+        "question": "He can to fly a helicopter.",
+        "answer": "He can fly a helicopter."
+      }
+    ]
+  },
+  {
+    "id": "a1_grammar_09",
+    "title": "Has / Have Got (Sahiplik)",
+    "level": "A1",
+    "description": "Bir şeye sahip olmayı (var/yok) belirtmek için kullanılır.",
+    "explanation": "**Yapı:** I/You/We/They have got (I've got) | He/She/It has got (He's got)\n**Olumsuz:** haven't got / hasn't got\n**Soru:** Have you got...? / Has he got...?\n\n**Havacılık Örnekleri:**\n- We have got enough fuel for the trip. (Seyahat için yeterli yakıtımız var.)\n- Has she got a boarding pass? (Onun biniş kartı var mı?)",
+    "aviationContext": "Yolcu durumları, evrak kontrolü veya uçak donanımından bahsederken kullanılır: 'We have got a problem with the left engine.'",
+    "exercises": [
+      {
+        "type": "fillBlank",
+        "question": "The captain ___ a map of the route.",
+        "answer": "has got",
+        "options": [
+          "have got",
+          "has got",
+          "is",
+          "are"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "___ we ___ enough time before boarding?",
+        "answer": "Have...got",
+        "options": [
+          "Have...got",
+          "Has...got",
+          "Do...got",
+          "Are...got"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Benim pasaportum var.",
+        "answer": "I have got my passport."
+      },
+      {
+        "type": "correctError",
+        "question": "They hasn't got their luggage.",
+        "answer": "They haven't got their luggage."
+      }
+    ]
+  },
+  {
+    "id": "a1_grammar_10",
+    "title": "There is / There are (Var/Yok)",
+    "level": "A1",
+    "description": "Bir nesnenin veya kişinin bir yerde mevcut olduğunu belirtir.",
+    "explanation": "**Tekiller/Sayılamayanlar için:** There is (There's) a storm ahead.\n**Çoğullar için:** There are 150 passengers on board.\n**Olumsuz:** There isn't a problem. / There aren't many clouds.\n**Soru:** Is there a doctor on board? / Are there any questions?\n\n**Havacılık Örnekleri:**\n- There is heavy traffic at the airport. (Havalimanında yoğun trafik var)\n- There are two pilots in the cockpit. (Kokpitte iki pilot var)",
+    "aviationContext": "Uçak içi veya dışındaki durumları yolculara veya kuleye bildirirken kullanılır: 'There is some turbulence ahead.'",
+    "exercises": [
+      {
+        "type": "fillBlank",
+        "question": "___ a delay on our flight.",
+        "answer": "There is",
+        "options": [
+          "There is",
+          "There are",
+          "It is",
+          "They are"
+        ]
+      },
+      {
+        "type": "fillBlank",
+        "question": "___ 3 exits on this aircraft.",
+        "answer": "There are",
+        "options": [
+          "There is",
+          "There are",
+          "Is there",
+          "Are there"
+        ]
+      },
+      {
+        "type": "translate",
+        "question": "Uçakta bir doktor var mı?",
+        "answer": "Is there a doctor on the plane?"
+      },
+      {
+        "type": "correctError",
+        "question": "There is two engines on the Boeing 737.",
+        "answer": "There are two engines on the Boeing 737."
+      }
+    ]
+  }
+]

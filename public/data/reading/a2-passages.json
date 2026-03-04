@@ -1,0 +1,116 @@
+[
+  {
+    "id": "a2_read_01",
+    "title": "Dealing with Bad Weather",
+    "level": "A2",
+    "category": "aviation",
+    "text": "Every pilot knows that weather is very important for flying. Yesterday, Captain Taylor was flying a big jet from New York to London. Everything was fine until they reached the middle of the Atlantic Ocean.\n\nSuddenly, the radar screen showed a heavy storm ahead. The clouds were completely black, and there was lightning everywhere. Captain Taylor had to make a quick decision. He contacted the Air Traffic Control (ATC) immediately. 'We have a strong thunderstorm ahead of us. We are requesting permission to deviate left by 15 miles,' he said. \n\nThe ATC allowed the change. The passengers felt some bumps, but because of the captain's safe choice, nobody was hurt. When they landed in London, many passengers thanked the crew.",
+    "textTr": "Her pilot hava durumunun uçuş için çok önemli olduğunu bilir. Dün, Kaptan Taylor New York'tan Londra'ya büyük bir jet uçuruyordu. Atlantik Okyanusu'nun ortasına ulaşana kadar her şey yolundaydı.\n\nAniden radar ekranı ileride ağır bir fırtına gösterdi. Bulutlar tamamen siyahtı ve her yerde şimşekler vardı. Kaptan Taylor hızlı bir karar vermek zorundaydı. Derhal Hava Trafik Kontrolü ile (ATC) iletişime geçti. 'Önümüzde güçlü bir fırtına/gök gürültülü sağanak var. 15 mil sola sapmak (rotadan çıkmak) için izin istiyoruz' dedi.\n\nATC değişikliğe izin verdi. Yolcular birkaç sarsıntı hissettiler ama kaptanın güvenli seçimi sayesinde kimse yaralanmadı. Londra'ya indiklerinde, birçok yolcu mürettebata teşekkür etti.",
+    "questions": [
+      {
+        "question": "Where was the flight going to?",
+        "options": [
+          "New York",
+          "London",
+          "The Atlantic Ocean",
+          "Paris"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "What did the radar show?",
+        "options": [
+          "Another airplane",
+          "A black hole",
+          "A heavy storm",
+          "Clear skies"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "What did the captain request from ATC?",
+        "options": [
+          "More fuel",
+          "To return to New York",
+          "To deviate left by 15 miles",
+          "To climb higher"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Were the passengers hurt during the turbulence?",
+        "options": [
+          "Yes, they were",
+          "No, nobody was hurt",
+          "Some of them were hurt",
+          "It doesn't say"
+        ],
+        "answer": 1
+      }
+    ],
+    "vocabulary": [
+      "thunderstorm",
+      "deviate",
+      "decision",
+      "bumps",
+      "lightning"
+    ]
+  },
+  {
+    "id": "a2_read_02",
+    "title": "A Day in the Life of a Mechanic",
+    "level": "A2",
+    "category": "technical",
+    "text": "Aircraft mechanics are the hidden heroes of aviation. They perform daily tasks to ensure that thousands of people travel safely. Dave is one of these mechanics. Early in the morning, Dave starts his shift by checking the maintenance logs of a Boeing 737. \n\nHe usually checks the tires, brakes, and the exterior of the aircraft first. A tire must be changed if there is any serious tear or low pressure. 'We can't take risks with a 60-ton machine,' Dave usually says.\n\nThen he opens the engine cowlings. He carefully looks for oil leaks or damaged parts. If he finds a problem, the aircraft cannot fly until it is solved. Sometimes a flight is delayed because of a technical problem, but safety always comes first.",
+    "textTr": "Uçak mekanikerleri havacılığın gizli kahramanlarıdır. Binlerce insanın güvenle seyahat etmesi için günlük görevler yaparlar. Dave bu teknisyenlerden biri. Sabah erkenden, Dave mesaisine bir Boeing 737'nin bakım kayıt defterlerini kontrol ederek başlar.\n\nGenellikle önce lastikleri, frenleri ve uçağın dışını kontrol eder. Eğer ciddi bir yırtık (aşınma) ya da düşük basınç varsa lastik değiştirilmek zorundadır. Dave genelde '60 tonluk bir makineyle risk alamayız' der.\n\nSonra motor kaportalarını (kapaklarını) açar. Dikkatli bir şekilde yağ kaçakları veya hasarlı parçalar arar. Eğer bir sorun bulursa, sorun çözülene kadar uçak uçamaz. Bazen teknik bir nedenden dolayı uçuş rötara girer ancak güvenlik her zaman ilk sıradadır.",
+    "questions": [
+      {
+        "question": "What do aircraft mechanics do?",
+        "options": [
+          "They fly the airplane",
+          "They ensure people travel safely",
+          "They sell tickets",
+          "They cook flight food"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "What does Dave check first?",
+        "options": [
+          "The seats",
+          "The engines",
+          "Tires, brakes, and exterior",
+          "Maintenance logs"
+        ],
+        "answer": 3
+      },
+      {
+        "question": "Why is a flight sometimes delayed?",
+        "options": [
+          "Because passengers are late",
+          "Because of a technical problem",
+          "Because Dave is sleeping",
+          "Because there is no fuel"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "What must be changed if there is low pressure?",
+        "options": [
+          "The pilot",
+          "The engine",
+          "The tire",
+          "The brakes"
+        ],
+        "answer": 2
+      }
+    ],
+    "vocabulary": [
+      "mechanic",
+      "maintenance",
+      "exterior",
+      "tear",
+      "leaks"
+    ]
+  }
+]

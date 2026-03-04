@@ -1,0 +1,177 @@
+.learning-path-container {
+  padding: var(--space-xl) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.learning-path-header {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.learning-path-header h2 {
+  font-size: var(--fs-3xl);
+  font-weight: 800;
+  background: linear-gradient(
+    135deg,
+    var(--accent-gold),
+    var(--accent-gold-light)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--space-sm);
+}
+
+.learning-path-header p {
+  color: var(--text-secondary);
+  font-size: var(--fs-lg);
+}
+
+.learning-path-timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xl);
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  padding: var(--space-xl);
+}
+
+/* Çizgi Yolu */
+.learning-path-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: var(--bg-tertiary);
+  transform: translateX(-50%);
+  border-radius: var(--radius-full);
+  z-index: 0;
+}
+
+.path-node {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.node-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-full);
+  background: var(--bg-card);
+  border: 4px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.node-icon {
+  font-size: 1.8rem;
+}
+
+/* Durum Stilleri */
+.path-node.completed .node-circle {
+  border-color: var(--accent-green);
+  background: color-mix(in srgb, var(--accent-green) 15%, var(--bg-card));
+  box-shadow: 0 0 20px rgba(46, 204, 113, 0.3);
+}
+
+.path-node.active .node-circle {
+  border-color: var(--accent-gold);
+  background: color-mix(in srgb, var(--accent-gold) 15%, var(--bg-card));
+  box-shadow: 0 0 25px rgba(244, 196, 48, 0.5);
+  transform: translateX(-50%) scale(1.1);
+}
+
+.path-node.locked .node-circle {
+  border-color: var(--border-color);
+  background: var(--bg-tertiary);
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.node-content {
+  width: calc(50% - 50px);
+  padding: var(--space-md);
+  opacity: 0;
+  transform: translateX(20px);
+  animation: slideInSide 0.5s ease forwards;
+}
+
+/* Sol ve Sağ Konumlandırma */
+.path-node:nth-child(odd) {
+  justify-content: flex-start;
+}
+.path-node:nth-child(odd) .node-content {
+  transform: translateX(-20px);
+}
+
+.path-node:nth-child(even) {
+  justify-content: flex-end;
+}
+
+.path-node.locked .node-content {
+  opacity: 0.5;
+  filter: grayscale(1);
+}
+
+.path-node.active .node-content {
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 20px rgba(244, 196, 48, 0.2);
+}
+
+.node-content h4 {
+  font-size: var(--fs-md);
+  margin-bottom: var(--space-sm);
+}
+
+.node-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--space-md);
+}
+
+@keyframes slideInSide {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Mobil Uyum */
+@media (max-width: 768px) {
+  .learning-path-timeline::before {
+    left: 40px;
+  }
+
+  .node-circle {
+    left: 40px;
+  }
+
+  .path-node:nth-child(odd),
+  .path-node:nth-child(even) {
+    justify-content: flex-start;
+  }
+
+  .node-content {
+    width: calc(100% - 100px);
+    margin-left: 100px;
+  }
+}

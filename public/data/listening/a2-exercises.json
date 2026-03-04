@@ -1,0 +1,100 @@
+[
+  {
+    "id": "a2_listen_01",
+    "title": "Check-in Desk Conversation",
+    "level": "A2",
+    "type": "conversation",
+    "text": "A: Good morning. Can I have your passport and ticket, please?\nB: Here you are.\nA: Thank you. Are you checking in any bags today?\nB: Yes, just one suitcase. The other one is a carry-on.\nA: Okay, place it on the scale, please. Oh, it's 25 kilos. It is a bit heavy, but it is acceptable. Would you prefer a window or an aisle seat?\nB: An aisle seat, please. It is more comfortable for my long legs.",
+    "textTr": "A: Günaydın. Pasaportunuzu ve biletinizi alabilir miyim lütfen?\nB: Buyurun.\nA: Teşekkürler. Bugün bagaj verecek misiniz?\nB: Evet, sadece bir büyük bavul. Diğeriyse el bagajı (kabin boy).\nA: Tamam, lütfen tartıya koyun. Oh, 25 kilo. Biraz ağır ama kabul edilebilir. Pencere kenarı mı yoksa koridor koltuğu mu tercih edersiniz?\nB: Koridor koltuğu lütfen. Benim uzun bacaklarım için daha rahat.",
+    "questions": [
+      {
+        "question": "How many bags is the passenger checking in (giving to the plane's hold)?",
+        "options": [
+          "None",
+          "One",
+          "Two",
+          "Three"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "How heavy is the suitcase?",
+        "options": [
+          "15 kilos",
+          "20 kilos",
+          "25 kilos",
+          "30 kilos"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "Why does the passenger want an aisle seat?",
+        "options": [
+          "To look outside",
+          "To sleep better",
+          "For his long legs",
+          "To speak to the crew"
+        ],
+        "answer": 2
+      }
+    ],
+    "fillBlanks": [
+      {
+        "text": "Are you checking in any ___ today?",
+        "answer": "bags"
+      },
+      {
+        "text": "The other one is a ___.",
+        "answer": "carry-on"
+      },
+      {
+        "text": "Place it on the ___, please.",
+        "answer": "scale"
+      }
+    ]
+  },
+  {
+    "id": "a2_listen_02",
+    "title": "Requesting Altitude Change",
+    "level": "A2",
+    "type": "atc",
+    "text": "Pilot: Frankfurt Control, this is Turkish One Niner. We are experiencing moderate turbulence at Flight Level 320. Requesting climb to Flight Level 340.\nATC: Turkish One Niner, climb and maintain Flight Level 340. \nPilot: Climbing to Flight Level 340, Turkish One Niner.",
+    "textTr": "Pilot: Frankfurt Kontrol, burası Turkish 19 (One Niner). Uçuş Seviyesi 320'de (32.000 feet) orta şiddetli türbülans yaşıyoruz. Uçuş Seviyesi 340'a tırmanış talep ediyoruz.\nATC: Turkish 19, Uçuş Seviyesi 340'a tırmanın ve muhafaza edin.\nPilot: Uçuş Seviyesi 340'a tırmanıyorum, Turkish 19.",
+    "questions": [
+      {
+        "question": "Why does the pilot want to change altitude?",
+        "options": [
+          "Because of bad view",
+          "Because of moderate turbulence",
+          "To save fuel",
+          "Because of engine failure"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "What is the new requested altitude?",
+        "options": [
+          "Flight Level 300",
+          "Flight Level 320",
+          "Flight Level 340",
+          "Flight Level 360"
+        ],
+        "answer": 2
+      }
+    ],
+    "fillBlanks": [
+      {
+        "text": "We are experiencing moderate ___.",
+        "answer": "turbulence"
+      },
+      {
+        "text": "___ climb to Flight Level 340.",
+        "answer": "Requesting"
+      },
+      {
+        "text": "Climb and ___ Flight Level 340.",
+        "answer": "maintain"
+      }
+    ]
+  }
+]

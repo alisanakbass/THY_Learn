@@ -1,0 +1,138 @@
+[
+  {
+    "id": "a1_listen_01",
+    "title": "Havalimanı Anonsu",
+    "level": "A1",
+    "type": "announcement",
+    "text": "Ladies and gentlemen, this is the final boarding call for Turkish Airlines flight TK 1234 to London Heathrow. All passengers please proceed to gate 15 immediately. The doors will close in five minutes.",
+    "textTr": "Bayanlar ve baylar, bu Türk Hava Yolları'nın Londra Heathrow'a TK 1234 sefer sayılı uçuşu için son çağrıdır. Tüm yolcuların lütfen derhal 15 numaralı kapıya geçmeleri rica olunur. Kapılar beş dakika içinde kapanacaktır.",
+    "questions": [
+      {
+        "question": "What airline is mentioned?",
+        "options": [
+          "British Airways",
+          "Turkish Airlines",
+          "Lufthansa",
+          "Emirates"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "What is the flight number?",
+        "options": ["TK 1234", "TK 4321", "TK 5678", "TK 8765"],
+        "answer": 0
+      },
+      {
+        "question": "Which gate should passengers go to?",
+        "options": ["Gate 10", "Gate 12", "Gate 15", "Gate 20"],
+        "answer": 2
+      },
+      {
+        "question": "Where is the flight going?",
+        "options": ["Paris", "Berlin", "New York", "London"],
+        "answer": 3
+      }
+    ],
+    "fillBlanks": [
+      {
+        "text": "This is the final ___ call for Turkish Airlines.",
+        "answer": "boarding"
+      },
+      { "text": "All passengers please ___ to gate 15.", "answer": "proceed" },
+      { "text": "The ___ will close in five minutes.", "answer": "doors" }
+    ]
+  },
+  {
+    "id": "a1_listen_02",
+    "title": "Pilot Anonsu",
+    "level": "A1",
+    "type": "pilot_announcement",
+    "text": "Good morning, ladies and gentlemen. This is your captain speaking. Welcome aboard Turkish Airlines flight TK 789 to Istanbul. Our flight time today will be approximately three hours. The weather in Istanbul is sunny with a temperature of 22 degrees. Please sit back, relax, and enjoy the flight. Thank you.",
+    "textTr": "Günaydın, bayanlar ve baylar. Ben kaptanınız konuşuyorum. Türk Hava Yolları TK 789 İstanbul uçuşuna hoş geldiniz. Bugün uçuş süremiz yaklaşık üç saat olacaktır. İstanbul'da hava güneşli ve sıcaklık 22 derece. Lütfen arkanıza yaslanın, rahat edin ve uçuşun keyfini çıkarın. Teşekkürler.",
+    "questions": [
+      {
+        "question": "Who is speaking?",
+        "options": [
+          "A passenger",
+          "A flight attendant",
+          "The captain",
+          "The tower"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "How long is the flight?",
+        "options": ["One hour", "Two hours", "Three hours", "Four hours"],
+        "answer": 2
+      },
+      {
+        "question": "What is the weather like in Istanbul?",
+        "options": ["Rainy", "Cloudy", "Sunny", "Snowy"],
+        "answer": 2
+      },
+      {
+        "question": "What is the temperature in Istanbul?",
+        "options": ["18°C", "20°C", "22°C", "25°C"],
+        "answer": 2
+      }
+    ],
+    "fillBlanks": [
+      { "text": "This is your ___ speaking.", "answer": "captain" },
+      {
+        "text": "Our flight ___ will be approximately three hours.",
+        "answer": "time"
+      },
+      { "text": "The weather in Istanbul is ___ .", "answer": "sunny" }
+    ]
+  },
+  {
+    "id": "a1_listen_03",
+    "title": "Güvenlik Anonsu",
+    "level": "A1",
+    "type": "safety",
+    "text": "Ladies and gentlemen, please fasten your seatbelts. Make sure your seat is in the upright position. Turn off all electronic devices. The emergency exits are located at the front, middle, and back of the aircraft. Your life vest is under your seat. Thank you for your attention.",
+    "textTr": "Bayanlar ve baylar, lütfen emniyet kemerlerinizi bağlayın. Koltuğunuzun dik pozisyonda olduğundan emin olun. Tüm elektronik cihazları kapatın. Acil çıkışlar uçağın ön, orta ve arka kısmında bulunmaktadır. Cankurtaran yeliğiniz koltuğunuzun altındadır. İlginiz için teşekkür ederiz.",
+    "questions": [
+      {
+        "question": "What should passengers fasten?",
+        "options": [
+          "Their shoes",
+          "Their seatbelts",
+          "Their bags",
+          "Their jackets"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "Where is the life vest?",
+        "options": [
+          "On the seat",
+          "In the overhead bin",
+          "Under the seat",
+          "At the exit"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "What should passengers turn off?",
+        "options": [
+          "The lights",
+          "Electronic devices",
+          "The air conditioning",
+          "The engine"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "How many emergency exit locations are mentioned?",
+        "options": ["One", "Two", "Three", "Four"],
+        "answer": 2
+      }
+    ],
+    "fillBlanks": [
+      { "text": "Please fasten your ___.", "answer": "seatbelts" },
+      { "text": "Turn off all ___ devices.", "answer": "electronic" },
+      { "text": "Your life vest is ___ your seat.", "answer": "under" }
+    ]
+  }
+]
