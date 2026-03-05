@@ -1,0 +1,193 @@
+.hrpeak-page {
+  padding: var(--space-xl);
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: calc(100vh - var(--header-height));
+}
+
+.hrpeak-card-glass {
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.hrpeak-icon-box {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(
+    135deg,
+    var(--accent-gold),
+    var(--accent-gold-light)
+  );
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-glow);
+  transform: rotate(3deg);
+}
+
+.hrpeak-stat-box {
+  background: var(--bg-card);
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  text-align: left;
+}
+
+.hrpeak-grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: var(--space-xl);
+}
+
+@media (max-width: 1024px) {
+  .hrpeak-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.timer-box {
+  background: var(--bg-card);
+  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: var(--fs-xl);
+  color: var(--text-primary);
+}
+
+.timer-warning {
+  color: var(--accent-red-light);
+  border-color: var(--accent-red-light);
+  animation: pulse 1s infinite;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.option-card {
+  padding: var(--space-lg);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.option-card:hover {
+  border-color: var(--accent-gold);
+  background: var(--bg-card-hover);
+  transform: translateX(4px);
+}
+
+.option-card.selected {
+  background: var(--accent-gold-glow);
+  border-color: var(--accent-gold-light);
+  box-shadow: 0 0 15px var(--accent-gold-glow);
+}
+
+.option-label {
+  width: 40px;
+  height: 40px;
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-right: var(--space-lg);
+  transition: all var(--transition-normal);
+}
+
+.option-card.selected .option-label {
+  background: var(--accent-gold);
+  color: #0a1628;
+}
+
+.option-text {
+  font-size: var(--fs-lg);
+  font-weight: 500;
+}
+
+.selected-icon {
+  position: absolute;
+  right: 20px;
+  color: var(--accent-gold);
+}
+
+.question-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.grid-item {
+  height: 40px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  font-weight: 700;
+  font-size: var(--fs-xs);
+  transition: all var(--transition-fast);
+}
+
+.grid-item:hover {
+  border-color: var(--accent-gold);
+  color: var(--text-primary);
+}
+
+.grid-item.active {
+  background: var(--accent-gold-glow);
+  border-color: var(--accent-gold);
+  color: var(--accent-gold-light);
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.grid-item.answered {
+  background: var(--accent-gold);
+  border-color: var(--accent-gold);
+  color: #0a1628;
+}
+
+.review-card {
+  border: 1px solid var(--border-color);
+  transition: transform var(--transition-normal);
+}
+
+.review-card:hover {
+  transform: translateY(-2px);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}

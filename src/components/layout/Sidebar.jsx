@@ -17,6 +17,12 @@ const menuItems = [
     label: "Sınav Simülasyonu",
     id: "mock-exam",
   },
+  {
+    path: "/hrpeak",
+    icon: "📊",
+    label: "HRPeak Sınavı",
+    id: "hrpeak",
+  },
   { path: "/notes", icon: "📝", label: "Notlarım", id: "notes" },
   { path: "/calendar", icon: "📅", label: "Takvim", id: "calendar" },
   { path: "/settings", icon: "⚙️", label: "Ayarlar", id: "settings" },
