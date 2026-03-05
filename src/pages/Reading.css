@@ -133,3 +133,59 @@
   text-align: center;
   padding: var(--space-xl);
 }
+
+/* Konuşma Pratiği (Speaking Dialogue) Stilleri */
+.dialogue-row {
+  display: flex;
+  margin-bottom: var(--space-md);
+  width: 100%;
+}
+
+.dialogue-row.left {
+  justify-content: flex-start;
+}
+
+.dialogue-row.right {
+  justify-content: flex-end;
+}
+
+.dialogue-bubble {
+  max-width: 80%;
+  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--radius-lg);
+  position: relative;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--accent-gold-glow);
+  box-shadow: var(--shadow-sm);
+}
+
+.dialogue-row.left .dialogue-bubble {
+  border-bottom-left-radius: 4px;
+}
+
+.dialogue-row.right .dialogue-bubble {
+  border-bottom-right-radius: 4px;
+  background: var(--bg-secondary);
+  border-color: rgba(39, 174, 96, 0.2);
+}
+
+.speaker-name {
+  display: block;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: 4px;
+  letter-spacing: 1px;
+}
+
+.dialogue-row.right .speaker-name {
+  color: var(--accent-green-light);
+  text-align: right;
+}
+
+.dialogue-bubble p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: var(--fs-md);
+}

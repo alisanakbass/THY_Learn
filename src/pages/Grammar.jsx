@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { useProgress } from "../contexts/useProgress";
+import { useSpeech } from "../hooks/useSpeech";
+import WordDetailDrawer from "../components/WordDetailDrawer";
 import "./Grammar.css";
 
 export default function Grammar() {
   const location = useLocation();
-  const { dispatch, isGrammarCompleted, getGrammarScore } = useProgress();
+  const { dispatch, isGrammarCompleted, getGrammarScore, findWord } =
+    useProgress();
   const [lessons, setLessons] = useState([]);
   const [activeLesson, setActiveLesson] = useState(null);
   const [exerciseIndex, setExerciseIndex] = useState(0);
@@ -15,6 +18,8 @@ export default function Grammar() {
   const [totalAnswered, setTotalAnswered] = useState(0);
   const [showLesson, setShowLesson] = useState(true);
   const [buildSentence, setBuildSentence] = useState([]);
+  const [selectedWord, setSelectedWord] = useState(null);
+  const { speak } = useSpeech();
 
   useEffect(() => {
     Promise.all([
@@ -115,6 +120,24 @@ export default function Grammar() {
         })
       : [];
 
+  const handleWordClick = (word) => {
+    const clean = word
+      .replace(/[.,!?;:'"()\n]/g, "")
+      .toLowerCase()
+      .trim();
+    if (clean) {
+      speak(clean);
+      const found = findWord(clean);
+      if (found) setSelectedWord(found);
+      else
+        setSelectedWord({
+          en: clean,
+          tr: "Bilinmeyen kelime",
+          category: "Sözlük",
+        });
+    }
+  };
+
   const isLessonComplete =
     activeLesson && totalAnswered >= activeLesson.exercises?.length;
 
@@ -159,189 +182,205 @@ export default function Grammar() {
   }
 
   return (
-    <div className="page-container animate-fade-in">
-      <button
-        className="btn btn-secondary grammar-back"
-        onClick={() => setActiveLesson(null)}
-      >
-        ← Derslere Dön
-      </button>
-
-      {showLesson && !isLessonComplete ? (
-        /* LESSON CONTENT */
-        <div className="grammar-lesson-content card">
-          <div className="lesson-content-header">
-            <h2>{activeLesson.title}</h2>
-            <span className="badge badge-blue">{activeLesson.level}</span>
-          </div>
-          <div
-            className="lesson-explanation"
-            dangerouslySetInnerHTML={{
-              __html: activeLesson.explanation
-                .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
-                .replace(/\n/g, "<br/>"),
-            }}
-          />
-          {activeLesson.aviationContext && (
-            <div className="aviation-context">
-              <span className="aviation-label">✈️ Havacılık Bağlamı:</span>
-              <p>{activeLesson.aviationContext}</p>
-            </div>
-          )}
+    <div
+      className={`page-container animate-fade-in ${selectedWord ? "drawer-open" : ""}`}
+    >
+      <div className="vocab-content-wrapper">
+        <div className="vocab-main-area">
           <button
-            className="btn btn-primary"
-            onClick={() => setShowLesson(false)}
-            style={{ marginTop: "var(--space-lg)" }}
+            className="btn btn-secondary grammar-back"
+            onClick={() => setActiveLesson(null)}
           >
-            📝 Alıştırmalara Geç
+            ← Derslere Dön
           </button>
-        </div>
-      ) : isLessonComplete ? (
-        /* RESULTS */
-        <div className="grammar-results card">
-          <div className="results-icon">
-            {score >= activeLesson.exercises.length * 0.7 ? "🎉" : "💪"}
-          </div>
-          <h2>Ders Tamamlandı!</h2>
-          <div className="results-score">
-            <span className="score-number">
-              {Math.round((score / activeLesson.exercises.length) * 100)}%
-            </span>
-            <span className="score-text">
-              {score}/{activeLesson.exercises.length} doğru
-            </span>
-          </div>
-          <div className="results-actions">
-            <button
-              className="btn btn-secondary"
-              onClick={() => handleSelectLesson(activeLesson)}
-            >
-              🔄 Tekrar Et
-            </button>
-            <button
-              className="btn btn-primary"
-              onClick={() => setActiveLesson(null)}
-            >
-              📚 Diğer Dersler
-            </button>
-          </div>
-        </div>
-      ) : (
-        /* EXERCISE */
-        <div className="grammar-exercise card">
-          <div className="exercise-header">
-            <span className="exercise-type">
-              {currentExercise?.type === "fillBlank"
-                ? "📝 Boşluk Doldur"
-                : currentExercise?.type === "translate"
-                  ? "🌍 Çeviri"
-                  : currentExercise?.type === "correctError"
-                    ? "🔍 Hatayı Bul"
-                    : "🧩 Cümle Kur"}
-            </span>
-            <span className="exercise-progress">
-              {exerciseIndex + 1}/{activeLesson.exercises.length}
-            </span>
-          </div>
 
-          <div className="exercise-question">
-            <p>{currentExercise?.question}</p>
-          </div>
-
-          {currentExercise?.type === "sentenceBuild" ? (
-            <div className="sentence-build">
-              <div className="sentence-result">
-                {buildSentence.length === 0 ? (
-                  <span className="sentence-placeholder">
-                    Kelimeleri sırayla tıklayın...
-                  </span>
-                ) : (
-                  buildSentence.map((word, i) => (
-                    <span
-                      key={i}
-                      className="sentence-word"
-                      onClick={() => handleRemoveWord(i)}
-                    >
-                      {word}
-                    </span>
-                  ))
-                )}
+          {showLesson && !isLessonComplete ? (
+            <div className="grammar-lesson-content card">
+              <div className="lesson-content-header">
+                <h2>{activeLesson.title}</h2>
+                <span className="badge badge-blue">{activeLesson.level}</span>
               </div>
-              <div className="sentence-words">
-                {remainingWords.map((word, i) => (
-                  <button
-                    key={i}
-                    className="btn btn-secondary btn-sm"
-                    onClick={() => handleSentenceBuild(word)}
-                  >
-                    {word}
-                  </button>
+              <div className="lesson-explanation">
+                {activeLesson.explanation.split("\n").map((line, li) => (
+                  <p key={li}>
+                    {line.split(" ").map((word, wi) => (
+                      <span
+                        key={wi}
+                        className="clickable-word"
+                        onClick={() => handleWordClick(word)}
+                      >
+                        {word}{" "}
+                      </span>
+                    ))}
+                  </p>
                 ))}
               </div>
-              {!showResult && buildSentence.length > 0 && (
+              {activeLesson.aviationContext && (
+                <div className="aviation-context">
+                  <span className="aviation-label">✈️ Havacılık Bağlamı:</span>
+                  <p>{activeLesson.aviationContext}</p>
+                </div>
+              )}
+              <button
+                className="btn btn-primary"
+                onClick={() => setShowLesson(false)}
+                style={{ marginTop: "var(--space-lg)" }}
+              >
+                📝 Alıştırmalara Geç
+              </button>
+            </div>
+          ) : isLessonComplete ? (
+            <div className="grammar-results card">
+              <div className="results-icon">
+                {score >= activeLesson.exercises.length * 0.7 ? "🎉" : "💪"}
+              </div>
+              <h2>Ders Tamamlandı!</h2>
+              <div className="results-score">
+                <span className="score-number">
+                  {Math.round((score / activeLesson.exercises.length) * 100)}%
+                </span>
+                <span className="score-text">
+                  {score}/{activeLesson.exercises.length} doğru
+                </span>
+              </div>
+              <div className="results-actions">
+                <button
+                  className="btn btn-secondary"
+                  onClick={() => handleSelectLesson(activeLesson)}
+                >
+                  🔄 Tekrar Et
+                </button>
                 <button
                   className="btn btn-primary"
-                  onClick={() => handleAnswer(buildSentence.join(" "))}
+                  onClick={() => setActiveLesson(null)}
                 >
-                  Kontrol Et
+                  📚 Diğer Dersler
                 </button>
-              )}
-            </div>
-          ) : currentExercise?.options ? (
-            <div className="exercise-options">
-              {currentExercise.options.map((opt, i) => (
-                <button
-                  key={i}
-                  className={`exercise-option ${showResult ? (opt === currentExercise.answer ? "correct" : opt === selectedAnswer ? "wrong" : "") : ""}`}
-                  onClick={() => handleAnswer(opt)}
-                  disabled={showResult}
-                >
-                  {opt}
-                </button>
-              ))}
+              </div>
             </div>
           ) : (
-            <div className="exercise-input-group">
-              <input
-                className="input exercise-input"
-                placeholder="Cevabınızı yazın..."
-                value={selectedAnswer || ""}
-                onChange={(e) => setSelectedAnswer(e.target.value)}
-                disabled={showResult}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" && selectedAnswer)
-                    handleAnswer(selectedAnswer);
-                }}
-              />
-              {!showResult && (
-                <button
-                  className="btn btn-primary"
-                  onClick={() => handleAnswer(selectedAnswer)}
-                >
-                  Kontrol Et
-                </button>
-              )}
-            </div>
-          )}
+            <div className="grammar-exercise card">
+              <div className="exercise-header">
+                <span className="exercise-type">📝 Alıştırma</span>
+                <span className="exercise-progress">
+                  {exerciseIndex + 1}/{activeLesson.exercises.length}
+                </span>
+              </div>
 
-          {showResult && (
-            <div
-              className={`exercise-feedback ${selectedAnswer === currentExercise?.answer ? "feedback-correct" : "feedback-wrong"}`}
-            >
-              <span>
-                {selectedAnswer === currentExercise?.answer
-                  ? "✅ Doğru!"
-                  : `❌ Yanlış! Doğru cevap: ${currentExercise?.answer}`}
-              </span>
-              <button className="btn btn-primary btn-sm" onClick={handleNext}>
-                {exerciseIndex + 1 < activeLesson.exercises.length
-                  ? "Sonraki →"
-                  : "Sonuçları Gör"}
-              </button>
+              <div className="exercise-question">
+                <p>
+                  {currentExercise?.question.split(" ").map((word, i) => (
+                    <span
+                      key={i}
+                      className="clickable-word"
+                      onClick={() => handleWordClick(word)}
+                    >
+                      {word}{" "}
+                    </span>
+                  ))}
+                </p>
+              </div>
+
+              {currentExercise?.type === "sentenceBuild" ? (
+                <div className="sentence-build">
+                  <div className="sentence-result">
+                    {buildSentence.length === 0 ? (
+                      <span className="sentence-placeholder">
+                        Kelimeleri sırayla tıklayın...
+                      </span>
+                    ) : (
+                      buildSentence.map((word, i) => (
+                        <span
+                          key={i}
+                          className="sentence-word"
+                          onClick={() => handleRemoveWord(i)}
+                        >
+                          {word}
+                        </span>
+                      ))
+                    )}
+                  </div>
+                  <div className="sentence-words">
+                    {remainingWords.map((word, i) => (
+                      <button
+                        key={i}
+                        className="btn btn-secondary btn-sm"
+                        onClick={() => handleSentenceBuild(word)}
+                      >
+                        {word}
+                      </button>
+                    ))}
+                  </div>
+                  {!showResult && buildSentence.length > 0 && (
+                    <button
+                      className="btn btn-primary"
+                      onClick={() => handleAnswer(buildSentence.join(" "))}
+                    >
+                      Kontrol Et
+                    </button>
+                  )}
+                </div>
+              ) : currentExercise?.options ? (
+                <div className="exercise-options">
+                  {currentExercise.options.map((opt, i) => (
+                    <button
+                      key={i}
+                      className={`exercise-option ${showResult ? (opt === currentExercise.answer ? "correct" : opt === selectedAnswer ? "wrong" : "") : ""}`}
+                      onClick={() => handleAnswer(opt)}
+                      disabled={showResult}
+                    >
+                      {opt}
+                    </button>
+                  ))}
+                </div>
+              ) : (
+                <div className="exercise-input-group">
+                  <input
+                    className="input exercise-input"
+                    placeholder="Cevabınızı yazın..."
+                    value={selectedAnswer || ""}
+                    onChange={(e) => setSelectedAnswer(e.target.value)}
+                    disabled={showResult}
+                  />
+                  {!showResult && (
+                    <button
+                      className="btn btn-primary"
+                      onClick={() => handleAnswer(selectedAnswer)}
+                    >
+                      Kontrol Et
+                    </button>
+                  )}
+                </div>
+              )}
+
+              {showResult && (
+                <div
+                  className={`exercise-feedback ${selectedAnswer === currentExercise?.answer ? "feedback-correct" : "feedback-wrong"}`}
+                >
+                  <span>
+                    {selectedAnswer === currentExercise?.answer
+                      ? "✅ Doğru!"
+                      : `❌ Yanlış! Doğru cevap: ${currentExercise?.answer}`}
+                  </span>
+                  <button
+                    className="btn btn-primary btn-sm"
+                    onClick={handleNext}
+                  >
+                    {exerciseIndex + 1 < activeLesson.exercises.length
+                      ? "Sonraki →"
+                      : "Sonuçları Gör"}
+                  </button>
+                </div>
+              )}
             </div>
           )}
         </div>
-      )}
+
+        <WordDetailDrawer
+          selectedWord={selectedWord}
+          onClose={() => setSelectedWord(null)}
+        />
+      </div>
     </div>
   );
 }

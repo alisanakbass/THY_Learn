@@ -9,12 +9,7 @@
     "questions": [
       {
         "question": "How old is Ali?",
-        "options": [
-          "20",
-          "23",
-          "25",
-          "28"
-        ],
+        "options": ["20", "23", "25", "28"],
         "answer": 2
       },
       {
@@ -29,12 +24,7 @@
       },
       {
         "question": "What time does Ali wake up?",
-        "options": [
-          "5 o'clock",
-          "6 o'clock",
-          "7 o'clock",
-          "8 o'clock"
-        ],
+        "options": ["5 o'clock", "6 o'clock", "7 o'clock", "8 o'clock"],
         "answer": 1
       },
       {
@@ -119,12 +109,7 @@
       },
       {
         "question": "At what altitude does the world look different?",
-        "options": [
-          "10,000 feet",
-          "20,000 feet",
-          "35,000 feet",
-          "50,000 feet"
-        ],
+        "options": ["10,000 feet", "20,000 feet", "35,000 feet", "50,000 feet"],
         "answer": 2
       }
     ],
@@ -152,52 +137,27 @@
     "questions": [
       {
         "question": "What is the captain's name?",
-        "options": [
-          "Ali",
-          "Ahmet",
-          "Mehmet",
-          "Mustafa"
-        ],
+        "options": ["Ali", "Ahmet", "Mehmet", "Mustafa"],
         "answer": 2
       },
       {
         "question": "Where is the airplane flying to?",
-        "options": [
-          "Istanbul",
-          "Paris",
-          "London",
-          "Berlin"
-        ],
+        "options": ["Istanbul", "Paris", "London", "Berlin"],
         "answer": 2
       },
       {
         "question": "What is the weather like in London?",
-        "options": [
-          "Sunny",
-          "Rainy and cold",
-          "Hot",
-          "Snowy"
-        ],
+        "options": ["Sunny", "Rainy and cold", "Hot", "Snowy"],
         "answer": 1
       },
       {
         "question": "How long is the flight?",
-        "options": [
-          "2 hours",
-          "3 hours",
-          "4 hours",
-          "5 hours"
-        ],
+        "options": ["2 hours", "3 hours", "4 hours", "5 hours"],
         "answer": 2
       },
       {
         "question": "What should passengers wear when they sit?",
-        "options": [
-          "Hats",
-          "Jackets",
-          "Glasses",
-          "Seatbelts"
-        ],
+        "options": ["Hats", "Jackets", "Glasses", "Seatbelts"],
         "answer": 3
       }
     ],
@@ -259,22 +219,11 @@
       },
       {
         "question": "How do pilots look in their uniforms?",
-        "options": [
-          "Tired",
-          "Sad",
-          "Smart",
-          "Old"
-        ],
+        "options": ["Tired", "Sad", "Smart", "Old"],
         "answer": 2
       }
     ],
-    "vocabulary": [
-      "busy",
-      "holiday",
-      "goodbye",
-      "uniform",
-      "smart"
-    ]
+    "vocabulary": ["busy", "holiday", "goodbye", "uniform", "smart"]
   },
   {
     "id": "a1_read_05",
@@ -286,12 +235,7 @@
     "questions": [
       {
         "question": "What is Sarah's job?",
-        "options": [
-          "Pilot",
-          "Teacher",
-          "Engineer",
-          "Flight attendant"
-        ],
+        "options": ["Pilot", "Teacher", "Engineer", "Flight attendant"],
         "answer": 3
       },
       {
@@ -335,13 +279,7 @@
         "answer": 2
       }
     ],
-    "vocabulary": [
-      "flight attendant",
-      "meet",
-      "crew",
-      "during",
-      "travel"
-    ]
+    "vocabulary": ["flight attendant", "meet", "crew", "during", "travel"]
   },
   {
     "id": "a1_read_06",
@@ -353,12 +291,7 @@
     "questions": [
       {
         "question": "Where is David on holiday?",
-        "options": [
-          "Paris",
-          "Spain",
-          "London",
-          "Turkey"
-        ],
+        "options": ["Paris", "Spain", "London", "Turkey"],
         "answer": 1
       },
       {
@@ -373,42 +306,21 @@
       },
       {
         "question": "What color is his bag?",
-        "options": [
-          "Red",
-          "Black",
-          "Blue",
-          "Brown"
-        ],
+        "options": ["Red", "Black", "Blue", "Brown"],
         "answer": 1
       },
       {
         "question": "Where is the bag now?",
-        "options": [
-          "In Spain",
-          "At the hotel",
-          "In David's hand",
-          "In Paris"
-        ],
+        "options": ["In Spain", "At the hotel", "In David's hand", "In Paris"],
         "answer": 3
       },
       {
         "question": "When does the bag go to the hotel?",
-        "options": [
-          "Tomorrow morning",
-          "Tonight",
-          "Next week",
-          "Never"
-        ],
+        "options": ["Tomorrow morning", "Tonight", "Next week", "Never"],
         "answer": 0
       }
     ],
-    "vocabulary": [
-      "lost",
-      "luggage",
-      "problem",
-      "carousel",
-      "tag"
-    ]
+    "vocabulary": ["lost", "luggage", "problem", "carousel", "tag"]
   },
   {
     "id": "a1_read_07",
@@ -450,22 +362,12 @@
       },
       {
         "question": "What is inside the cockpit?",
-        "options": [
-          "Bags",
-          "Many buttons and screens",
-          "Animals",
-          "Food"
-        ],
+        "options": ["Bags", "Many buttons and screens", "Animals", "Food"],
         "answer": 1
       },
       {
         "question": "How does Tom feel?",
-        "options": [
-          "Bored",
-          "Angry",
-          "Excited and nervous",
-          "Tired"
-        ],
+        "options": ["Bored", "Angry", "Excited and nervous", "Tired"],
         "answer": 2
       }
     ],
@@ -476,5 +378,84 @@
       "experienced",
       "explain"
     ]
+  },
+  {
+    "id": "a1_speak_01",
+    "title": "🗣️ Introduction: Meeting a New Colleague",
+    "level": "A1",
+    "category": "speaking",
+    "text": "Ali: Hello! My name is Ali. I am a new pilot here.\nSarah: Nice to meet you, Ali! I am Sarah. I am a flight attendant.\nAli: Nice to meet you too, Sarah! Where are you from?\nSarah: I am from London, but I live in Istanbul now. How about you?\nAli: I am from Ankara. Is it your first day?\nSarah: No, I worked here for two years. Do you like airplanes?\nAli: Yes, I love them! It is my dream job.",
+    "textTr": "Ali: Merhaba! Benim adım Ali. Burada yeni pilotum.\nSarah: Tanıştığımıza memnun oldum Ali! Ben Sarah. Kabin görevlisiyim.\nAli: Ben de memnun oldum Sarah! Nerelisin?\nSarah: Londralıyım ama şimdi İstanbul'da yaşıyorum. Ya sen?\nAli: Ankaralıyım. Senin ilk günün mü?\nSarah: Hayır, burada iki yıldır çalışıyorum. Uçakları sever misin?\nAli: Evet, onlara bayılıyorum! Benim hayalimdeki iş.",
+    "questions": [
+      {
+        "question": "What is Ali's job?",
+        "options": ["Doctor", "Pilot", "Engineer", "Teacher"],
+        "answer": 1
+      },
+      {
+        "question": "Where is Sarah from?",
+        "options": ["Ankara", "Istanbul", "London", "Paris"],
+        "answer": 2
+      }
+    ],
+    "vocabulary": ["Introduction", "Colleague", "Dream job", "Nice to meet you"]
+  },
+  {
+    "id": "a1_speak_02",
+    "title": "🗣️ Expressing Feelings: Before My First Flight",
+    "level": "A1",
+    "category": "speaking",
+    "text": "Tom: Hi Maria! How are you today?\nMaria: To be honest, I am a little bit nervous.\nTom: Why? What is the problem?\nMaria: Today is my first solo flight! I feel excited but also scared.\nTom: Don't worry! You are a great student. Take a deep breath.\nMaria: Thank you, Tom. Now I feel more confident. I am ready to fly!",
+    "textTr": "Tom: Selam Maria! Bugün nasılsın?\nMaria: Dürüst olmak gerekirse, biraz gerginim.\nTom: Neden? Sorun nedir?\nMaria: Bugün benim ilk solo uçuşum! Heyecanlıyım ama aynı zamanda korkuyorum.\nTom: Endişelenme! Sen harika bir öğrencisin. Derin bir nefes al.\nMaria: Teşekkürler Tom. Şimdi daha özgüvenli hissediyorum. Uçmaya hazırım!",
+    "questions": [
+      {
+        "question": "How does Maria feel at first?",
+        "options": ["Happy", "Nervous and scared", "Bored", "Angry"],
+        "answer": 1
+      },
+      {
+        "question": "What is Maria's advice from Tom?",
+        "options": ["Go home", "Take a deep breath", "Drink coffee", "Sleep"],
+        "answer": 1
+      }
+    ],
+    "vocabulary": [
+      "Nervous",
+      "Scared",
+      "Confident",
+      "Deep breath",
+      "Solo flight"
+    ]
+  },
+  {
+    "id": "a1_speak_03",
+    "title": "🗣️ Past Events: Talking About Yesterday",
+    "level": "A1",
+    "category": "speaking",
+    "text": "Jack: Hey Amy! Did you have a good weekend?\nAmy: Yes, it was great! I went to the aviation museum yesterday.\nJack: Awesome! What did you see there?\nAmy: I saw many old airplanes. I even sat in a cockpit of an old jet.\nJack: That sounds fun. Did you take photos?\nAmy: Yes, I took many photos. It was an amazing experience.",
+    "textTr": "Jack: Hey Amy! Hafta sonun iyi geçti mi?\nAmy: Evet, harikaydı! Dün havacılık müzesine gittim.\nJack: Harika! Orada ne gördün?\nAmy: Pek çok eski uçak gördüm. Hatta eski bir jetin kokpitine oturdum.\nJack: Kulağa eğlenceli geliyor. Fotoğraf çektin mi?\nAmy: Evet, çok fotoğraf çektim. Harika bir deneyimdi.",
+    "questions": [
+      {
+        "question": "Where did Amy go yesterday?",
+        "options": [
+          "The park",
+          "The aviation museum",
+          "The airport",
+          "The cinema"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "What did Amy do in the jet?",
+        "options": [
+          "She slept",
+          "She sat in the cockpit",
+          "She fixed the engine",
+          "She cleaned it"
+        ],
+        "answer": 1
+      }
+    ],
+    "vocabulary": ["Weekend", "Museum", "Experience", "Yesterday"]
   }
 ]

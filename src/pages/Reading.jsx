@@ -2,11 +2,12 @@ import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { useProgress } from "../contexts/useProgress";
 import { useSpeech } from "../hooks/useSpeech";
+import WordDetailDrawer from "../components/WordDetailDrawer";
 import "./Reading.css";
 
 export default function Reading() {
   const location = useLocation();
-  const { state, dispatch } = useProgress();
+  const { state, dispatch, findWord } = useProgress();
   const { speak, speaking, stop } = useSpeech();
   const [passages, setPassages] = useState([]);
   const [activePassage, setActivePassage] = useState(null);
@@ -14,6 +15,7 @@ export default function Reading() {
   const [showResults, setShowResults] = useState(false);
   const [showTranslation, setShowTranslation] = useState(false);
   const [highlightedWord, setHighlightedWord] = useState(null);
+  const [selectedWord, setSelectedWord] = useState(null);
 
   useEffect(() => {
     Promise.all([
@@ -63,6 +65,17 @@ export default function Reading() {
     if (clean) {
       setHighlightedWord(clean);
       speak(clean);
+
+      const found = findWord(clean);
+      if (found) {
+        setSelectedWord(found);
+      } else {
+        setSelectedWord({
+          en: clean,
+          tr: "Bilinmeyen kelime",
+          category: "Sözlük",
+        });
+      }
     }
   };
 
@@ -114,123 +127,130 @@ export default function Reading() {
   }
 
   return (
-    <div className="page-container animate-fade-in">
-      <button
-        className="btn btn-secondary"
-        onClick={() => {
-          setActivePassage(null);
-          stop();
-        }}
-        style={{ marginBottom: "var(--space-lg)" }}
-      >
-        ← Geri
-      </button>
+    <div
+      className={`page-container animate-fade-in ${selectedWord ? "drawer-open" : ""}`}
+    >
+      <div className="vocab-content-wrapper">
+        <div className="vocab-main-area">
+          <button
+            className="btn btn-secondary"
+            onClick={() => {
+              setActivePassage(null);
+              stop();
+            }}
+            style={{ marginBottom: "var(--space-lg)" }}
+          >
+            ← Geri
+          </button>
 
-      <div className="reading-content">
-        <div className="reading-passage-section">
-          <div className="card reading-passage">
-            <div className="reading-passage-header">
-              <h2>{activePassage.title}</h2>
-              <div className="reading-tools">
-                <button
-                  className="btn btn-sm btn-secondary"
-                  onClick={() => speak(activePassage.text)}
-                >
-                  {speaking ? "⏹️ Durdur" : "🔊 Sesli Oku"}
-                </button>
-                <button
-                  className="btn btn-sm btn-secondary"
-                  onClick={() => setShowTranslation(!showTranslation)}
-                >
-                  {showTranslation ? "🙈 Çeviriyi Gizle" : "🌍 Çeviriyi Göster"}
-                </button>
-              </div>
-            </div>
-            <div className="reading-text">
-              {activePassage.text.split("\n\n").map((paragraph, pi) => (
-                <p key={pi} className="reading-paragraph">
-                  {paragraph.split(" ").map((word, wi) => (
-                    <span
-                      key={wi}
-                      className={`reading-word ${highlightedWord === word.replace(/[.,!?;:'"()]/g, "").toLowerCase() ? "highlighted" : ""} ${activePassage.vocabulary?.includes(word.replace(/[.,!?;:'"()]/g, "").toLowerCase()) ? "vocab-word" : ""}`}
-                      onClick={() => handleWordClick(word)}
+          <div className="reading-content-layout">
+            <div className="reading-passage-section">
+              <div className="card reading-passage">
+                <div className="reading-passage-header">
+                  <h2>{activePassage.title}</h2>
+                  <div className="reading-tools">
+                    <button
+                      className="btn btn-sm btn-secondary"
+                      onClick={() => speak(activePassage.text)}
                     >
-                      {word}{" "}
-                    </span>
-                  ))}
-                </p>
-              ))}
-            </div>
-            {showTranslation && (
-              <div className="reading-translation">
-                <h4>🌍 Türkçe Çeviri:</h4>
-                {activePassage.textTr.split("\n\n").map((p, i) => (
-                  <p key={i}>{p}</p>
-                ))}
-              </div>
-            )}
-            {activePassage.vocabulary && (
-              <div className="reading-vocab-list">
-                <h4>📚 Önemli Kelimeler:</h4>
-                <div className="reading-vocab-tags">
-                  {activePassage.vocabulary.map((word) => (
-                    <span
-                      key={word}
-                      className="badge badge-gold reading-vocab-tag"
-                      onClick={() => {
-                        speak(word);
-                        setHighlightedWord(word);
-                      }}
+                      {speaking ? "⏹️ Durdur" : "🔊 Sesli Oku"}
+                    </button>
+                    <button
+                      className="btn btn-sm btn-secondary"
+                      onClick={() => setShowTranslation(!showTranslation)}
                     >
-                      {word}
-                    </span>
-                  ))}
+                      {showTranslation ? "🙈 Gizle" : "🌍 Çeviri"}
+                    </button>
+                  </div>
+                </div>
+                <div className="reading-text">
+                  {activePassage.text.split("\n").map((line, li) => {
+                    const colonIndex = line.indexOf(": ");
+                    if (
+                      colonIndex !== -1 &&
+                      activePassage.category === "speaking"
+                    ) {
+                      const name = line.substring(0, colonIndex);
+                      const content = line.substring(colonIndex + 2);
+                      return (
+                        <div
+                          key={li}
+                          className={`dialogue-row ${li % 2 === 0 ? "left" : "right"}`}
+                        >
+                          <div className="dialogue-bubble">
+                            <span className="speaker-name">{name}</span>
+                            <p className="reading-paragraph">
+                              {content.split(" ").map((word, wi) => (
+                                <span
+                                  key={wi}
+                                  className={`reading-word ${highlightedWord === word.replace(/[.,!?;:'"()]/g, "").toLowerCase() ? "highlighted" : ""} ${activePassage.vocabulary?.includes(word.replace(/[.,!?;:'"()]/g, "").toLowerCase()) ? "vocab-word" : ""}`}
+                                  onClick={() => handleWordClick(word)}
+                                >
+                                  {word}{" "}
+                                </span>
+                              ))}
+                            </p>
+                          </div>
+                        </div>
+                      );
+                    }
+                    return (
+                      <p key={li} className="reading-paragraph">
+                        {line.split(" ").map((word, wi) => (
+                          <span
+                            key={wi}
+                            className={`reading-word ${highlightedWord === word.replace(/[.,!?;:'"()]/g, "").toLowerCase() ? "highlighted" : ""} ${activePassage.vocabulary?.includes(word.replace(/[.,!?;:'"()]/g, "").toLowerCase()) ? "vocab-word" : ""}`}
+                            onClick={() => handleWordClick(word)}
+                          >
+                            {word}{" "}
+                          </span>
+                        ))}
+                      </p>
+                    );
+                  })}
                 </div>
               </div>
-            )}
+            </div>
+
+            <div className="reading-questions-section">
+              <h3>📝 Anlama Soruları</h3>
+              {activePassage.questions.map((q, qi) => (
+                <div key={qi} className="card question-card">
+                  <p className="question-text">
+                    {qi + 1}. {q.question}
+                  </p>
+                  <div className="question-options">
+                    {q.options.map((opt, oi) => (
+                      <button
+                        key={oi}
+                        className={`quiz-option ${answers[qi] === oi ? "selected" : ""} ${showResults ? (oi === q.answer ? "correct" : answers[qi] === oi ? "wrong" : "") : ""}`}
+                        onClick={() => handleAnswer(qi, oi)}
+                        disabled={showResults}
+                      >
+                        {opt}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              ))}
+              {!showResults &&
+                Object.keys(answers).length ===
+                  activePassage.questions.length && (
+                  <button
+                    className="btn btn-primary btn-lg"
+                    onClick={checkAnswers}
+                  >
+                    ✅ Kontrol Et
+                  </button>
+                )}
+            </div>
           </div>
         </div>
 
-        <div className="reading-questions-section">
-          <h3>📝 Anlama Soruları</h3>
-          {activePassage.questions.map((q, qi) => (
-            <div key={qi} className="card question-card">
-              <p className="question-text">
-                {qi + 1}. {q.question}
-              </p>
-              <div className="question-options">
-                {q.options.map((opt, oi) => (
-                  <button
-                    key={oi}
-                    className={`quiz-option ${answers[qi] === oi ? "selected" : ""} ${showResults ? (oi === q.answer ? "correct" : answers[qi] === oi ? "wrong" : "") : ""}`}
-                    onClick={() => handleAnswer(qi, oi)}
-                    disabled={showResults}
-                  >
-                    {opt}
-                  </button>
-                ))}
-              </div>
-            </div>
-          ))}
-          {!showResults &&
-            Object.keys(answers).length === activePassage.questions.length && (
-              <button className="btn btn-primary btn-lg" onClick={checkAnswers}>
-                ✅ Cevapları Kontrol Et
-              </button>
-            )}
-          {showResults && (
-            <div className="card reading-result">
-              <h3>
-                {
-                  activePassage.questions.filter(
-                    (q, i) => answers[i] === q.answer,
-                  ).length
-                }
-                /{activePassage.questions.length} Doğru 🎉
-              </h3>
-            </div>
-          )}
-        </div>
+        <WordDetailDrawer
+          selectedWord={selectedWord}
+          onClose={() => setSelectedWord(null)}
+        />
       </div>
     </div>
   );

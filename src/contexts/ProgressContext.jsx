@@ -1,4 +1,4 @@
-import { useReducer, useEffect } from "react";
+import { useReducer, useEffect, useState, useCallback } from "react";
 import { ProgressContext } from "./useProgress";
 
 const initialState = {
@@ -24,6 +24,7 @@ const initialState = {
   notes: [],
   errorLog: [],
   badges: [],
+  userWords: [], // Kullanıcının eklediği kelimeler
   mockExam: { history: [], bestScore: 0 },
   wordOfDay: { word: null, date: null },
   settings: {
@@ -47,27 +48,35 @@ function progressReducer(state, action) {
         box: 1,
         timesCorrect: 0,
         timesWrong: 0,
+        lastReview: null,
+        nextReview: null,
+        learned: false,
       };
+
       const now = new Date().toISOString().split("T")[0];
       const boxIntervals = { 1: 1, 2: 2, 3: 4, 4: 8, 5: 16 };
 
+      // Yanlış bilinirse her zaman Box 1'e döner
       let newBox = correct ? Math.min(current.box + 1, 5) : 1;
       const nextDate = new Date();
       nextDate.setDate(nextDate.getDate() + boxIntervals[newBox]);
 
+      const updatedVocab = {
+        ...state.vocabulary,
+        [wordId]: {
+          ...current,
+          box: newBox,
+          lastReview: now,
+          nextReview: nextDate.toISOString().split("T")[0],
+          timesCorrect: current.timesCorrect + (correct ? 1 : 0),
+          timesWrong: current.timesWrong + (correct ? 0 : 1),
+          learned: newBox >= 5,
+        },
+      };
+
       return {
         ...state,
-        vocabulary: {
-          ...state.vocabulary,
-          [wordId]: {
-            box: newBox,
-            lastReview: now,
-            nextReview: nextDate.toISOString().split("T")[0],
-            timesCorrect: current.timesCorrect + (correct ? 1 : 0),
-            timesWrong: current.timesWrong + (correct ? 0 : 1),
-            learned: newBox >= 5,
-          },
-        },
+        vocabulary: updatedVocab,
         xp: state.xp + (correct ? 10 : 2),
         totalXP: state.totalXP + (correct ? 10 : 2),
         dailyGoals: {
@@ -227,6 +236,106 @@ function progressReducer(state, action) {
       };
     }
 
+    case "ADD_USER_WORD": {
+      const newWord = {
+        id: `user_${Date.now()}`,
+        ...action.payload,
+        isUserAdded: true,
+      };
+      return {
+        ...state,
+        userWords: [...state.userWords, newWord],
+        vocabulary: {
+          ...state.vocabulary,
+          [newWord.id]: {
+            box: 1,
+            timesCorrect: 0,
+            timesWrong: 0,
+            lastReview: null,
+            nextReview: null,
+            learned: false,
+          },
+        },
+      };
+    }
+
+    case "SET_WORD_STATUS": {
+      const { word, status } = action.payload; // status: 'learning' | 'known'
+      const isKnown = status === "known";
+      const wordId = word.id || `user_${Date.now()}`;
+
+      const existingInUser = state.userWords.find(
+        (w) => w.en.toLowerCase() === word.en.toLowerCase(),
+      );
+      const newUserWords = existingInUser
+        ? state.userWords
+        : [...state.userWords, { ...word, id: wordId, isUserAdded: true }];
+      const finalId = existingInUser ? existingInUser.id : wordId;
+
+      return {
+        ...state,
+        userWords: newUserWords,
+        vocabulary: {
+          ...state.vocabulary,
+          [finalId]: {
+            box: isKnown ? 5 : 1,
+            timesCorrect: isKnown ? 1 : 0,
+            timesWrong: 0,
+            lastReview: new Date().toISOString().split("T")[0],
+            nextReview: isKnown
+              ? "2099-12-31"
+              : new Date().toISOString().split("T")[0],
+            learned: isKnown,
+          },
+        },
+      };
+    }
+
+    case "BULK_ADD_WORDS": {
+      const { words, level } = action.payload; // words: [{en, tr}, ...]
+      let newAddedCount = 0;
+      const newUserWords = [...state.userWords];
+      const newVocabulary = { ...state.vocabulary };
+
+      words.forEach((w) => {
+        const enLower = w.en.toLowerCase().trim();
+        // Mükerrer Kontrolü: Hem kullanıcı listesinde hem sistem listesinde ara
+        const isDuplicateUser = state.userWords.some(
+          (uw) => uw.en.toLowerCase() === enLower,
+        );
+        const isDuplicateSystem = state.systemWords?.some(
+          (sw) => sw.en.toLowerCase() === enLower,
+        );
+
+        if (!isDuplicateUser && !isDuplicateSystem) {
+          const wordId = `user_bulk_${Date.now()}_${newAddedCount}`;
+          newUserWords.push({
+            id: wordId,
+            en: w.en.trim(),
+            tr: w.tr.trim(),
+            level: level || state.currentLevel,
+            category: "Toplu Ekleme",
+            isUserAdded: true,
+          });
+          newVocabulary[wordId] = {
+            box: 1,
+            timesCorrect: 0,
+            timesWrong: 0,
+            lastReview: new Date().toISOString().split("T")[0],
+            nextReview: new Date().toISOString().split("T")[0],
+            learned: false,
+          };
+          newAddedCount++;
+        }
+      });
+
+      return {
+        ...state,
+        userWords: newUserWords,
+        vocabulary: newVocabulary,
+      };
+    }
+
     case "SET_LEVEL": {
       return { ...state, currentLevel: action.payload };
     }
@@ -284,8 +393,18 @@ function progressReducer(state, action) {
   }
 }
 
+const ALL_VOCAB_FILES = [
+  "/data/vocabulary/a1-general.json",
+  "/data/vocabulary/a1-aviation.json",
+  "/data/vocabulary/a2-general.json",
+  "/data/vocabulary/a2-aviation.json",
+  "/data/vocabulary/b1-general.json",
+  "/data/vocabulary/b1-aviation.json",
+];
+
 export function ProgressProvider({ children }) {
   const [state, dispatch] = useReducer(progressReducer, initialState);
+  const [systemWords, setSystemWords] = useState([]);
 
   useEffect(() => {
     try {
@@ -306,13 +425,54 @@ export function ProgressProvider({ children }) {
     }
   }, [state]);
 
+  // SİSTEM KELİMELERİNİ BİR KEZ YÜKLE
+  useEffect(() => {
+    const loadAllWords = async () => {
+      try {
+        const results = await Promise.all(
+          ALL_VOCAB_FILES.map((url) =>
+            fetch(url).then((res) => (res.ok ? res.json() : [])),
+          ),
+        );
+        setSystemWords(results.flat());
+      } catch (err) {
+        console.error("Sözlük yüklenirken hata:", err);
+      }
+    };
+    loadAllWords();
+  }, []);
+
   useEffect(() => {
     dispatch({ type: "RESET_DAILY_GOALS" });
     const interval = setInterval(() => {
       dispatch({ type: "RESET_DAILY_GOALS" });
     }, 60000);
-    return () => clearInterval(interval);
-  }, []);
+
+    // Rozet Kontrolü - Yan etkiler için bir başka timer veya state değişikliği izlenebilir
+    const badgeTimer = setInterval(() => {
+      // XP Rozetleri
+      if (state.totalXP >= 500 && !state.badges.includes("xp_500"))
+        dispatch({ type: "EARN_BADGE", payload: "xp_500" });
+      if (state.totalXP >= 1000 && !state.badges.includes("xp_1000"))
+        dispatch({ type: "EARN_BADGE", payload: "xp_1000" });
+
+      // Kelime Rozetleri
+      const learnedCount = Object.values(state.vocabulary).filter(
+        (v) => v.learned,
+      ).length;
+      if (learnedCount >= 1 && !state.badges.includes("first_word"))
+        dispatch({ type: "EARN_BADGE", payload: "first_word" });
+      if (learnedCount >= 50 && !state.badges.includes("vocab_50"))
+        dispatch({ type: "EARN_BADGE", payload: "vocab_50" });
+      if (learnedCount >= 100 && !state.badges.includes("vocab_100"))
+        dispatch({ type: "EARN_BADGE", payload: "vocab_100" });
+    }, 5000);
+
+    return () => {
+      clearInterval(interval);
+      clearInterval(badgeTimer);
+    };
+  }, [state.totalXP, state.vocabulary, state.badges]);
 
   const getWordProgress = (wordId) => state.vocabulary[wordId] || null;
   const isWordDueForReview = (wordId) => {
@@ -330,6 +490,28 @@ export function ProgressProvider({ children }) {
     state.grammar[lessonId]?.completed || false;
   const getGrammarScore = (lessonId) => state.grammar[lessonId]?.score || 0;
   const getMockExamHistory = () => state.mockExam?.history || [];
+
+  const findWord = useCallback(
+    (enOrTr) => {
+      const clean = enOrTr
+        .replace(/[.,!?;:'"()\n]/g, "")
+        .toLowerCase()
+        .trim();
+      if (!clean) return null;
+
+      // Önce kullanıcı kelimelerinde ara
+      const userFound = state.userWords.find(
+        (w) => w.en.toLowerCase() === clean || w.tr.toLowerCase() === clean,
+      );
+      if (userFound) return userFound;
+
+      // Sonra sistem kelimelerinde ara
+      return systemWords.find(
+        (w) => w.en.toLowerCase() === clean || w.tr.toLowerCase() === clean,
+      );
+    },
+    [systemWords, state.userWords],
+  );
 
   const getLevelProgress = () => {
     const levels = { A1: 0, A2: 1, B1: 2, B2: 3 };
@@ -394,6 +576,8 @@ export function ProgressProvider({ children }) {
         exportProgress,
         importProgress,
         getMockExamHistory,
+        findWord,
+        systemWords,
       }}
     >
       {children}
